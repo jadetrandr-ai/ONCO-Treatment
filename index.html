@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>OGC Treatment</title>
-<meta name="description" content="OGC Treatment">
+<title>Onco-Treatment</title>
+<meta name="description" content="Onco-Treatment — cây quyết định điều trị ung thư vú, dạ dày, thực quản - EGJ và u lympho, bám NCCN, ESMO và Bộ Y tế.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
@@ -37,7 +37,7 @@
   --indigo-soft:#E8ECFA;
 
   --shadow:0 1px 2px rgba(76,63,128,.06), 0 12px 28px -20px rgba(76,63,128,.45);
-  --ring:0 0 0 1px var(--purple);
+  --ring:0 0 0 1px var(--accent);
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
@@ -77,7 +77,7 @@ button{font:inherit; color:inherit}
 img{max-width:100%}
 [hidden]{display:none!important}
 .mono{font-family:"IBM Plex Mono", ui-monospace, Menlo, monospace; font-variant-numeric:tabular-nums}
-:focus-visible{outline:2px solid var(--purple); outline-offset:2px; border-radius:6px}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:6px}
 
 /* ---------- header ---------- */
 header.top{
@@ -88,7 +88,7 @@ header.top{
 .top-in{max-width:980px; margin:0 auto; padding:11px 16px; display:flex; gap:12px; align-items:center}
 .mark{
   width:28px; height:28px; border-radius:9px; flex:0 0 auto;
-  background:linear-gradient(140deg, var(--purple), var(--teal));
+  background:linear-gradient(140deg, var(--accent), var(--teal));
   display:grid; place-items:center; color:#fff; font-size:14px; font-weight:700;
 }
 .brand{min-width:0}
@@ -99,18 +99,18 @@ header.top{
   border:1px solid var(--line); background:var(--surface); border-radius:999px;
   width:34px; height:34px; cursor:pointer; display:grid; place-items:center; flex:0 0 auto;
 }
-.icon-btn:hover{border-color:var(--purple)}
+.icon-btn:hover{border-color:var(--accent)}
 
 /* ---------- layout ---------- */
 .wrap{max-width:980px; margin:0 auto; padding-inline:16px; padding-block:0 72px}
 .panel{background:var(--surface); border:1px solid var(--line); border-radius:14px; box-shadow:var(--shadow)}
 .pad{padding:18px}
-.eyebrow{font-size:10.5px; letter-spacing:.13em; text-transform:uppercase; color:var(--purple); font-weight:700}
+.eyebrow{font-size:10.5px; letter-spacing:.13em; text-transform:uppercase; color:var(--accent); font-weight:700}
 .muted{color:var(--ink-2)}
 .small{font-size:13px}
 .row{display:flex; gap:9px; flex-wrap:wrap; align-items:center}
 
-.hero h1{font-size:23px; letter-spacing:-.02em; margin:6px 0 6px}
+.sr-title{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .hero p{margin:0; color:var(--ink-2); font-size:14.5px; max-width:66ch}
 .legend{display:flex; gap:14px; flex-wrap:wrap; margin-top:14px; font-size:12.5px; color:var(--ink-2)}
 .legend i{display:inline-block; width:9px; height:9px; border-radius:3px; margin-right:6px; vertical-align:-1px}
@@ -121,8 +121,8 @@ header.top{
   border:1px solid var(--line-2); background:var(--surface); padding:7px 14px;
   border-radius:9px; cursor:pointer; font-size:13.5px; font-weight:500;
 }
-.btn:hover{border-color:var(--purple); color:var(--purple)}
-.btn.primary{background:var(--purple); border-color:var(--purple); color:#fff}
+.btn:hover{border-color:var(--accent); color:var(--accent)}
+.btn.primary{background:var(--accent); border-color:var(--accent); color:#fff}
 .btn.primary:hover{filter:brightness(1.08); color:#fff}
 
 /* ---------- search ---------- */
@@ -133,19 +133,19 @@ header.top{
   font:inherit; font-size:14px;
 }
 .search input::placeholder{color:var(--ink-3)}
-.search input:focus{outline:none; border-color:var(--purple); background:var(--surface)}
+.search input:focus{outline:none; border-color:var(--accent); background:var(--surface)}
 .search .clr{
   position:absolute; right:7px; top:50%; transform:translateY(-50%);
   width:26px; height:26px; border-radius:999px; border:0; background:transparent;
   cursor:pointer; color:var(--ink-3); display:grid; place-items:center; font-size:15px;
 }
-.search .clr:hover{color:var(--purple)}
+.search .clr:hover{color:var(--accent)}
 .hits{margin-top:10px; display:flex; flex-direction:column; gap:5px; max-height:330px; overflow:auto}
 .hit{
   text-align:left; border:1px solid var(--line); background:var(--surface-2);
   border-radius:9px; padding:8px 12px; cursor:pointer; font-size:13.5px; line-height:1.45;
 }
-.hit:hover{border-color:var(--purple); background:var(--purple-soft)}
+.hit:hover{border-color:var(--accent); background:var(--accent-soft)}
 .hit b{display:block; font-weight:600; font-size:14px}
 .hit span{display:block; color:var(--ink-3); font-size:11.5px; margin-top:2px}
 .hit mark{background:var(--amber-soft); color:var(--amber); border-radius:3px; padding:0 2px}
@@ -154,10 +154,10 @@ header.top{
 /* ---------- breadcrumbs ---------- */
 .crumbs{display:flex; gap:5px; flex-wrap:wrap; align-items:center; margin-top:10px}
 .crumbs .cb{
-  background:var(--purple-soft); border:1px solid var(--line); color:var(--purple);
+  background:var(--accent-soft); border:1px solid var(--line); color:var(--accent);
   padding:3px 11px; border-radius:999px; font-size:12.5px; cursor:pointer; font-weight:500;
 }
-.crumbs .cb:hover{border-color:var(--purple)}
+.crumbs .cb:hover{border-color:var(--accent)}
 .crumbs .sep{color:var(--ink-3); font-size:12px}
 
 /* ---------- tree ---------- */
@@ -166,11 +166,11 @@ header.top{
   background:var(--surface-2); border:1px solid var(--line);
   border-radius:11px; padding:12px 14px; font-weight:600; font-size:15px;
 }
-.rootcard .dot{width:20px; height:20px; border-radius:50%; background:var(--purple); flex:0 0 auto}
+.rootcard .dot{width:20px; height:20px; border-radius:50%; background:var(--accent); flex:0 0 auto}
 
-.kids{position:relative; margin-left:14px; padding-left:21px; display:flex; flex-direction:column; gap:8px; margin-top:8px}
+.kids{position:relative; margin-left:14px; padding-left:21px; display:flex; flex-direction:column; gap:8px; margin-top:8px; min-width:0}
 .kids::before{content:""; position:absolute; left:0; top:-4px; bottom:16px; width:2px; background:var(--line-2); border-radius:2px}
-.nodewrap{position:relative}
+.nodewrap{position:relative; min-width:0}
 .kids > .nodewrap::before{content:""; position:absolute; left:-21px; top:22px; width:17px; height:2px; background:var(--line-2); border-radius:2px}
 
 .node{
@@ -178,21 +178,21 @@ header.top{
   border:1px solid var(--line); background:var(--surface); border-radius:11px;
   padding:11px 13px; cursor:pointer; line-height:1.45;
 }
-.node:hover{border-color:var(--purple); background:var(--purple-soft)}
+.node:hover{border-color:var(--accent); background:var(--accent-soft)}
 .node .tw{
   flex:0 0 auto; width:21px; height:21px; border-radius:7px; display:grid; place-items:center;
-  background:var(--surface-2); border:1px solid var(--line); font-size:10px; color:var(--purple);
+  background:var(--surface-2); border:1px solid var(--line); font-size:10px; color:var(--accent);
   transition:transform .18s ease; margin-top:1px;
 }
 .node[aria-expanded="true"] .tw{transform:rotate(90deg)}
 .node.leaf .tw{border-style:dashed; background:transparent}
 .node .lbl{flex:1 1 auto; min-width:0; font-size:14.5px; font-weight:500}
 .node .tag{flex:0 0 auto; font-size:10.5px; font-weight:600; padding:2px 9px; border-radius:999px; white-space:nowrap; margin-top:2px}
-.node.sel{border-color:var(--purple); background:var(--purple-soft); box-shadow:var(--ring)}
+.node.sel{border-color:var(--accent); background:var(--accent-soft); box-shadow:var(--ring)}
 .node.flash{animation:flash 1.4s ease}
 @keyframes flash{0%,40%{box-shadow:0 0 0 3px var(--amber-soft), 0 0 0 4px var(--amber)} 100%{box-shadow:none}}
 
-.tg-p{background:var(--purple-soft); color:var(--purple)}
+.tg-p{background:var(--accent-soft); color:var(--accent)}
 .tg-t{background:var(--teal-soft); color:var(--teal)}
 .tg-a{background:var(--amber-soft); color:var(--amber)}
 .tg-r{background:var(--rose-soft); color:var(--rose)}
@@ -210,22 +210,22 @@ header.top{
 .box.dose{border-color:var(--indigo); background:var(--indigo-soft)}
 .box.dose h4{color:var(--indigo)}
 
-.rec{margin:10px 0 0 32px; border:1px solid var(--purple); background:var(--purple-soft); border-radius:12px; padding:14px 16px}
+.rec{margin:10px 0 0 32px; border:1px solid var(--accent); background:var(--accent-soft); border-radius:12px; padding:14px 16px}
 .rec .lv{
   display:inline-block; font-size:10px; font-weight:700; letter-spacing:.07em; text-transform:uppercase;
-  background:var(--purple); color:#fff; padding:3px 10px; border-radius:999px; margin-bottom:8px;
+  background:var(--accent); color:#fff; padding:3px 10px; border-radius:999px; margin-bottom:8px;
 }
 .rec .lv.t{background:var(--teal)}
 .rec .lv.a{background:var(--amber)}
 .rec .lv.r{background:var(--rose)}
 .rec .lv.i{background:var(--indigo)}
-.rec h4{font-size:16px; color:var(--purple-deep); margin-bottom:9px}
+.rec h4{font-size:16px; color:var(--accent-deep); margin-bottom:9px}
 .rec ul{padding-left:19px; display:flex; flex-direction:column; gap:7px; font-size:14px; line-height:1.56}
 .rec .cav{margin-top:12px; padding-top:10px; border-top:1px dashed var(--line-2); font-size:13.2px; color:var(--ink-2)}
 .rec .cav b{color:var(--ink)}
 
 /* tables inside nodes */
-.tbl{margin:9px 0 0 32px; overflow-x:auto; border:1px solid var(--line); border-radius:11px; background:var(--surface-2)}
+.tbl{margin:9px 0 0 32px; max-width:100%; overflow-x:auto; border:1px solid var(--line); border-radius:11px; background:var(--surface-2)}
 .tbl table{border-collapse:collapse; width:100%; font-size:13px; min-width:420px}
 .tbl th,.tbl td{padding:7px 11px; text-align:left; border-bottom:1px solid var(--line); vertical-align:top}
 .tbl th{font-weight:600; color:var(--ink-2); font-size:11.5px; letter-spacing:.04em; text-transform:uppercase; background:var(--surface-3)}
@@ -247,16 +247,51 @@ footer{margin-top:30px; padding-top:16px; border-top:1px solid var(--line); font
   .panel{box-shadow:none; break-inside:avoid}
   .node{break-inside:avoid}
 }
+
+/* ---------- tone màu riêng cho từng loại ung thư ---------- */
+:root{ --accent:var(--purple); --accent-soft:var(--purple-soft); --accent-deep:var(--purple-deep); }
+html[data-onco="vu"] { --accent:#C2185B; --accent-soft:#FCE7F1; --accent-deep:#8E1248; }
+html[data-onco="dd"] { --accent:#4C56B8; --accent-soft:#EAECFA; --accent-deep:#343C8A; }
+html[data-onco="tq"] { --accent:#11776B; --accent-soft:#E0F2EF; --accent-deep:#0A544B; }
+html[data-onco="lym"]{ --accent:#4D7C0F; --accent-soft:#EFF7E2; --accent-deep:#38590B; }
+@media (prefers-color-scheme: dark){
+  html[data-onco="vu"]:not([data-theme="light"]) { --accent:#F48FB1; --accent-soft:#3B1225; --accent-deep:#FBC7D8; }
+  html[data-onco="dd"]:not([data-theme="light"]) { --accent:#9AA6F2; --accent-soft:#1C2044; --accent-deep:#C3CBF8; }
+  html[data-onco="tq"]:not([data-theme="light"]) { --accent:#5FC9BA; --accent-soft:#0E2E2A; --accent-deep:#9DE5DA; }
+  html[data-onco="lym"]:not([data-theme="light"]){ --accent:#A3E635; --accent-soft:#1C2A0C; --accent-deep:#CBEE8A; }
+}
+html[data-onco="vu"][data-theme="dark"] { --accent:#F48FB1; --accent-soft:#3B1225; --accent-deep:#FBC7D8; }
+html[data-onco="dd"][data-theme="dark"] { --accent:#9AA6F2; --accent-soft:#1C2044; --accent-deep:#C3CBF8; }
+html[data-onco="tq"][data-theme="dark"] { --accent:#11776B; --accent-soft:#0E2E2A; --accent-deep:#9DE5DA; }
+html[data-onco="lym"][data-theme="dark"]{ --accent:#A3E635; --accent-soft:#1C2A0C; --accent-deep:#CBEE8A; }
+html[data-onco="tq"][data-theme="dark"] { --accent:#5FC9BA; }
+.mark{ background:linear-gradient(140deg, var(--accent), var(--accent-deep)); transition:background .25s ease }
+.note,.box,.rec,.node .lbl,.rec li,.box li,.hit,.crumbs .cb{overflow-wrap:anywhere}
+.rec ul,.box ul{padding-left:17px}
+.tg-vu{background:#FCE7F1;color:#C2185B}
+.tg-dd{background:#EAECFA;color:#4C56B8}
+.tg-tq{background:#E0F2EF;color:#11776B}
+.tg-ly{background:#EFF7E2;color:#4D7C0F}
+html[data-theme="dark"] .tg-vu{background:#3B1225;color:#F48FB1}
+html[data-theme="dark"] .tg-dd{background:#1C2044;color:#9AA6F2}
+html[data-theme="dark"] .tg-tq{background:#0E2E2A;color:#5FC9BA}
+html[data-theme="dark"] .tg-ly{background:#1C2A0C;color:#A3E635}
+@media (prefers-color-scheme:dark){html:not([data-theme="light"]) .tg-vu{background:#3B1225;color:#F48FB1}
+html:not([data-theme="light"]) .tg-dd{background:#1C2044;color:#9AA6F2}
+html:not([data-theme="light"]) .tg-tq{background:#0E2E2A;color:#5FC9BA}
+html:not([data-theme="light"]) .tg-ly{background:#1C2A0C;color:#A3E635}}
+.dis-dot{display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:7px;vertical-align:-1px}
+.legend{gap:16px}
 </style>
 </head>
 <body>
 
 <header class="top">
   <div class="top-in">
-    <div class="mark" aria-hidden="true">⌁</div>
+    <div class="mark" aria-hidden="true">◎</div>
     <div class="brand">
-      <b>OGC Treatment</b>
-      <span>Tiêu hoá &amp; Huyết học · NCCN 2026</span>
+      <b>Onco-Treatment</b>
+      <span>NCCN · ESMO · Bộ Y tế</span>
     </div>
     <div class="spacer"></div>
     <button class="icon-btn" id="themeBtn" aria-label="Đổi giao diện sáng tối" title="Đổi giao diện sáng / tối">◐</button>
@@ -266,74 +301,576 @@ footer{margin-top:30px; padding-top:16px; border-top:1px solid var(--line); font
 <div class="wrap">
 
   <section class="panel pad hero" style="margin-top:18px">
-    <div class="eyebrow">Hướng dẫn sử dụng</div>
-    <h1>Bấm từng nhánh để bung lựa chọn tiếp theo</h1>
-    <p>
-      Ba nhánh gốc là <b>ung thư đường tiêu hoá trên</b> (dạ dày, thực quản – chỗ nối dạ dày thực quản),
-      <b>u lympho</b> (dòng B, dòng T/NK, Hodgkin) và <b>bảng tra cứu</b> (phác đồ kèm liều, Lugano, thang tiên lượng, WHO-HAEM5).
-      Mỗi lần chọn một nhánh, các nhánh anh em thu lại để đường đi luôn rõ. Bấm lại nhánh đang mở để lùi một bậc.
-      Nhánh cuối hiện khuyến cáo kèm <b>mức bằng chứng NCCN</b>.
-    </p>
-    <div class="legend">
-      <span><i style="background:var(--purple)"></i>Mức 1 — bằng chứng cao, đồng thuận toàn thể</span>
-      <span><i style="background:var(--teal)"></i>Mức 2A — mặc định của NCCN</span>
-      <span><i style="background:var(--amber)"></i>Mức 2B — đồng thuận đa số</span>
-      <span><i style="background:var(--rose)"></i>Giảm nhẹ / không còn chỉ định triệt căn</span>
-      <span><i style="background:var(--indigo)"></i>Bảng tra cứu — liều, tiêu chuẩn, thang điểm</span>
-    </div>
-
+    <h1 class="sr-title">Cây quyết định điều trị ung thư</h1>
     <div class="search">
       <input id="q" type="search" autocomplete="off" spellcheck="false"
-             placeholder="Tìm bệnh, phác đồ hay thuốc — ví dụ: DLBCL, FLOT, brentuximab, Deauville…"
+             placeholder="Tìm bệnh, phác đồ hay thuốc — ví dụ: TCHP, KEYNOTE-522, ribociclib, FLOT…"
              aria-label="Tìm trong cây quyết định">
       <button class="clr" id="qClr" type="button" aria-label="Xoá ô tìm kiếm" hidden>✕</button>
       <div class="hits" id="hits" hidden></div>
     </div>
 
-    <div class="ctl" style="margin-top:16px">
-      <button class="btn primary" id="btnReset">Thu gọn về gốc</button>
-      <button class="btn" id="btnAll">Mở toàn bộ cây</button>
-      <button class="btn" id="btnPrint">In / lưu PDF</button>
+    <div class="ctl" style="margin-top:14px">
+      <button class="btn primary" id="btnReset">Về gốc</button>
+      <button class="btn" id="btnAll">Mở toàn bộ</button>
+      <button class="btn" id="btnPrint">In / PDF</button>
+    </div>
+
+    <div class="legend">
+      <span><i style="background:#C2185B"></i>Vú</span>
+      <span><i style="background:#4C56B8"></i>Dạ dày</span>
+      <span><i style="background:#11776B"></i>Thực quản</span>
+      <span><i style="background:#4D7C0F"></i>U lympho</span>
+      <span class="muted">Mức 1 · 2A · 2B theo NCCN, ghi tại mỗi khuyến cáo</span>
     </div>
   </section>
 
   <section class="panel pad" style="margin-top:14px">
     <div class="crumbs" id="crumbs"></div>
     <div id="tree" style="margin-top:12px"></div>
-    <div class="srcline">
-      Mọi khuyến cáo là <b>mức 2A</b> trừ khi ghi rõ khác — theo quy ước của NCCN.
-      Nguồn chính: NCCN Clinical Practice Guidelines in Oncology — <b>Gastric Cancer v4.2026</b>,
-      <b>Esophageal and Esophagogastric Junction Cancers v4.2026</b>, <b>B-Cell Lymphomas v4.2026</b>,
-      <b>T-Cell Lymphomas v2.2026</b>, <b>Hodgkin Lymphoma v2.2026</b>.
-      Các điểm bổ sung từ ESMO CPG, phân loại WHO-HAEM5 (2022), tiêu chuẩn Lugano 2014 và
-      Hướng dẫn Bộ Y tế (QĐ 3127/QĐ-BYT 2020 cho ung thư tiêu hoá; QĐ 1832/QĐ-BYT 2022 cho bệnh lý huyết học)
-      đều được ghi rõ nguồn ngay tại chỗ.
-    </div>
   </section>
 
   <footer>
-    Công cụ hỗ trợ tư duy lâm sàng, không thay thế hội chẩn đa chuyên khoa và không thay thế bản gốc của hướng dẫn.
-    Hướng dẫn điều trị thay đổi nhanh — luôn đối chiếu phiên bản mới nhất trước khi ra quyết định.
-    Liều thuốc là liều chuẩn tham khảo, phải hiệu chỉnh theo chức năng gan thận, thể trạng và phác đồ của cơ sở.
+    Khuyến cáo là <b>mức 2A</b> trừ khi ghi rõ khác. Nguồn: NCCN Breast Cancer v1.2026, Gastric Cancer v4.2026,
+    Esophageal and EGJ Cancers v4.2026, B-Cell Lymphomas v4.2026, T-Cell Lymphomas v2.2026, Hodgkin Lymphoma v2.2026;
+    ESMO CPG; Hướng dẫn Bộ Y tế. Liều là liều chuẩn tham khảo — hiệu chỉnh theo từng người bệnh.
+    Công cụ hỗ trợ tư duy lâm sàng, không thay thế hội chẩn đa chuyên khoa.
   </footer>
 </div>
 <script>
 /* =======================================================================
-   NHÁNH 1 — UNG THƯ ĐƯỜNG TIÊU HOÁ TRÊN
-   Nguồn: NCCN Gastric Cancer v4.2026 (16/09/2026)
-          NCCN Esophageal and EGJ Cancers v4.2026 (16/09/2026)
+   UNG THƯ VÚ
+   Nguồn chính: NCCN Breast Cancer v1.2026 (16/01/2026)
+   Bổ sung: Hướng dẫn Bộ Y tế (QĐ 3128/QĐ-BYT) · ESMO Early/Metastatic BC
    Quy ước NCCN: mọi khuyến cáo là mức 2A trừ khi ghi rõ khác.
    ======================================================================= */
 
-var GI = {
-label:"UNG THƯ ĐƯỜNG TIÊU HOÁ TRÊN", tag:"Tiêu hoá", tagc:"p",
-note:"Phác đồ điều trị toàn thân cho <b>ung thư biểu mô tuyến</b> thực quản, chỗ nối dạ dày – thực quản (EGJ) và dạ dày ở giai đoạn tiến xa <b>có thể dùng thay thế lẫn nhau</b> (NCCN). Ung thư biểu mô vảy thực quản có phác đồ riêng.",
+var BREAST = {
+label:"UNG THƯ VÚ", tag:"Vú", tagc:"vu",
+note:"Mọi quyết định điều trị bám vào bộ ba <b>ER/PR – HER2 – giai đoạn</b>. NCCN v1.2026 yêu cầu làm ER, PR, HER2 cho mọi khối u xâm nhập; xét nghiệm <b>BRCA1/2 dòng mầm</b> cho mọi trường hợp bộ ba âm tính (mọi lứa tuổi), ứng viên olaparib bổ trợ và <b>mọi bệnh nhân tái phát/di căn</b>. Ở giai đoạn di căn còn thêm <b>PIK3CA/AKT1/PTEN, ESR1, PD-L1 (CPS), HER2-low (IHC 1+ hoặc 2+/ISH âm)</b>.",
 children:[
 
-/* =====================================================================
-   ============================ DẠ DÀY =================================
-   ===================================================================== */
-{label:"UNG THƯ DẠ DÀY", tag:"Dạ dày", tagc:"p",
+/* ================== 1. DCIS ================== */
+{label:"UNG THƯ BIỂU MÔ ỐNG TẠI CHỖ (DCIS) — Tis N0 M0", tag:"DCIS", tagc:"i",
+ note:"Mục tiêu là kiểm soát tại chỗ. Bắt buộc xác định <b>ER</b>; không cần đánh giá HER2 để ra quyết định. <b>Không vét hạch nách</b> cho DCIS thuần tuý.",
+ children:[
+  {label:"Phẫu thuật bảo tồn được", tag:"BCS", tagc:"t",
+   note:"Diện cắt an toàn cho DCIS là <b>≥2 mm</b> (NCCN BINV-F; Bộ Y tế cũng lấy tối thiểu 2 mm). Chưa đạt thì cắt lại; không đạt được thì cắt toàn bộ tuyến vú.",
+   children:[
+    {label:"Xạ trị sau mổ bảo tồn", tag:"Xạ trị", tagc:"p",
+     rec:{lvl:"1", lvc:"", title:"Xạ toàn vú ± tăng cường liều nền u",
+      li:["<b>Xạ toàn bộ vú ± boost</b> — mức 1. Giảm tái phát tại vú cùng bên 50–70%.",
+          "Hoặc <b>xạ một phần tuyến vú (APBI/PBI)</b> cho nhóm nguy cơ thấp được chọn lọc.",
+          "Hoặc <b>bỏ xạ trị</b> (mức 2B) nếu đủ toàn bộ tiêu chuẩn <b>RTOG 9804</b>: phát hiện qua sàng lọc, độ mô học 1–2, kích thước ≤2,5 cm, diện cắt ≥3 mm."],
+      cav:"Yếu tố làm tăng tái phát tại chỗ: tổn thương lớn, sờ thấy u, độ 3, diện cắt ≤2 mm, ER âm, tuổi <50. Bộ Y tế: liều toàn vú 45–50,4 Gy / 25–28 phân liều hoặc 40–42,5 Gy / 15–16 phân liều; APBI áp sát 34 Gy/10 phân liều hoặc xạ ngoài 38,5 Gy/10 phân liều, 2 lần/ngày."}},
+    {label:"Nội tiết giảm nguy cơ (ER dương)", tag:"Nội tiết", tagc:"a",
+     rec:{lvl:"1", lvc:"", title:"Nội tiết 5 năm cho DCIS ER dương",
+      li:["<b>Chưa mãn kinh: tamoxifen 20 mg/ngày × 5 năm.</b>",
+          "<b>Đã mãn kinh: tamoxifen hoặc ức chế aromatase × 5 năm</b> — ưu thế nghiêng về AI ở người <b>&lt;60 tuổi</b> hoặc lo ngại huyết khối.",
+          "Mức 1 khi đã mổ bảo tồn + xạ trị; vẫn cân nhắc khi chỉ cắt rộng u đơn thuần.",
+          "<b>Tamoxifen liều thấp</b> 5 mg/ngày (hoặc 10 mg cách ngày) × 3–5 năm nếu không dung nạp liều chuẩn (DeCensi, JCO 2019)."],
+      cav:"Không làm xét nghiệm gen CYP2D6 trước khi dùng tamoxifen. ER âm: lợi ích nội tiết chưa rõ."}}]},
+  {label:"Cắt toàn bộ tuyến vú", tag:"Mastectomy", tagc:"t",
+   rec:{lvl:"2A", lvc:"t", title:"Cắt tuyến vú ± sinh thiết hạch cửa ± tái tạo",
+    li:["Chỉ định: tổn thương lan rộng (từ 2 góc phần tư), không đạt diện cắt âm tính, có chống chỉ định xạ trị, hoặc bệnh nhân chọn.",
+        "<b>Có thể bỏ sinh thiết hạch cửa</b> ở người &gt;50 tuổi, DCIS độ thấp ER dương không sờ thấy, nách bình thường, và khi lý do cắt tuyến vú là nguyện vọng bệnh nhân.",
+        "Không xạ trị thêm nếu diện cắt âm tính.",
+        "Tái tạo tức thì hoặc trì hoãn theo nhu cầu."],
+    cav:"Nếu mô bệnh học sau mổ có thành phần <b>xâm nhập</b> → chuyển sang phác đồ ung thư vú xâm nhập giai đoạn I–II."}}]},
+
+/* ================== 2. GIAI ĐOẠN SỚM — MỔ TRƯỚC ================== */
+{label:"GIAI ĐOẠN SỚM, MỔ TRƯỚC — cT1–3 N0–1 M0", tag:"Mổ trước", tagc:"t",
+ note:"Áp dụng khi không có chỉ định điều trị toàn thân trước mổ. Quyết định điều trị bổ trợ dựa trên <b>mô bệnh học + ER/PR + HER2 + pT/pN</b> sau mổ (NCCN BINV-4).",
+ children:[
+
+ {label:"Điều trị tại chỗ – tại vùng", tag:"Tại chỗ", tagc:"i",
+  children:[
+   {label:"Mổ bảo tồn (BCS) ± xạ trị", tag:"BCS", tagc:"t",
+    note:"Xạ trị là bắt buộc sau mổ bảo tồn, trừ các tình huống được phép bỏ dưới đây. Đặt clip giường u để lập kế hoạch xạ chính xác.",
+    children:[
+     {label:"pN0 hoặc cN0", tag:"pN0", tagc:"t",
+      rec:{lvl:"1", lvc:"", title:"Xạ toàn vú ± boost; cân nhắc bỏ xạ ở nhóm chọn lọc",
+       li:["<b>Xạ toàn bộ vú ± boost nền u</b>; cân nhắc xạ hạch vùng toàn diện (RNI) nếu u trung tâm/phía trong, pT3, hoặc pT2 kèm 1 yếu tố: độ 3, xâm nhập mạch lan rộng, HR âm.",
+           "Hoặc <b>APBI/PBI</b> cho nhóm nguy cơ thấp được chọn lọc (mức 1).",
+           "<b>Có thể bỏ xạ trị</b> nếu có dùng nội tiết bổ trợ và đạt (mức 1): ① ≥70 tuổi, HR+, HER2−, cN0, pT1 (≤2 cm); hoặc ② ≥65 tuổi, HR+, HER2−, pN0, pT ≤3 cm."],
+       cav:"Thử nghiệm <b>EUROPA</b> (Meattini, Lancet 2025): người cao tuổi đủ tiêu chuẩn bỏ xạ có thể chọn <b>xạ trị đơn thuần thay cho nội tiết</b> mà không ảnh hưởng kết cục. Bộ Y tế bổ sung tiêu chuẩn APBI: giai đoạn I, u đơn ổ, ER dương, ≥60 tuổi."}},
+     {label:"pN1a — 1–3 hạch nách dương", tag:"pN1", tagc:"a",
+      rec:{lvl:"1", lvc:"", title:"Xạ toàn vú ± boost, cân nhắc RNI toàn diện",
+       li:["Nếu đủ <b>toàn bộ</b>: cT1–T3, cN0, không hoá trị trước mổ, 1–2 hạch cửa dương, có kế hoạch xạ toàn vú → <b>xạ toàn vú ± boost</b>, việc đưa nách vào trường xạ do bác sĩ xạ trị quyết định (mức 1) — <b>không cần vét hạch nách</b> (ACOSOG Z0011).",
+           "Nếu không đủ các tiêu chuẩn trên → xạ toàn vú có bao phủ phần nách chưa vét ± boost (mức 1), <b>cân nhắc mạnh RNI toàn diện</b>."]}},
+     {label:"pN2–3 — ≥4 hạch nách dương", tag:"pN2–3", tagc:"r",
+      rec:{lvl:"1", lvc:"", title:"Xạ toàn vú + RNI toàn diện",
+       li:["<b>Xạ toàn bộ vú ± boost + xạ hạch vùng toàn diện</b>, bao gồm phần nách chưa vét (mức 1).",
+           "Cân nhắc chụp CT ngực/bụng ± chậu có cản quang, xạ hình xương, PET/CT (tuỳ chọn) để loại trừ di căn."]}}]},
+   {label:"Cắt tuyến vú ± xạ trị thành ngực (PMRT)", tag:"Mastectomy", tagc:"t",
+    note:"Cắt tuyến vú tiết kiệm da, bảo tồn quầng – núm hoặc cắt toàn bộ, kèm đánh giá hạch nách. Tái tạo ngay hoặc trì hoãn.",
+    children:[
+     {label:"pN0 và ≤pT2 (≤5 cm), diện cắt âm", tag:"Nguy cơ thấp", tagc:"t",
+      rec:{lvl:"2A", lvc:"t", title:"Không xạ trị",
+       li:["Không chỉ định PMRT thường quy.",
+           "<b>Cân nhắc PMRT</b> nếu nhiều yếu tố nguy cơ: u trung tâm/phía trong, hoặc u ≥2 cm kèm ít nhất một trong các yếu tố độ 3, ER âm, tuổi trẻ/kỳ vọng sống dài, xâm nhập mạch bạch huyết."]}},
+     {label:"pN0 nhưng pT3 (>5 cm)", tag:"pT3N0", tagc:"a",
+      rec:{lvl:"2A", lvc:"a", title:"Cân nhắc PMRT thành ngực ± RNI",
+       li:["Cân nhắc PMRT thành ngực ± RNI toàn diện bao gồm phần nách chưa vét.",
+           "Yếu tố nghiêng về xạ: tuổi trẻ/kỳ vọng sống dài, xâm nhập mạch bạch huyết."]}},
+     {label:"1–3 hạch nách dương", tag:"pN1", tagc:"a",
+      rec:{lvl:"2A", lvc:"a", title:"Cân nhắc mạnh PMRT + RNI toàn diện",
+       li:["<b>Cân nhắc mạnh</b> PMRT thành ngực + RNI toàn diện (gồm phần nách chưa vét).",
+           "Với pN1mi (vi di căn >0,2–≤2,0 mm) và chưa vét nách: cân nhắc thêm các yếu tố nguy cơ khác trước khi xạ."],
+       cav:"Bộ Y tế ghi rõ nhóm 1–3 hạch dương là <b>cân nhắc (thiên về) xạ</b> thành ngực + hạ đòn, thượng đòn, vú trong và phần nách nguy cơ."}},
+     {label:"≥4 hạch nách dương", tag:"pN2–3", tagc:"r",
+      rec:{lvl:"1", lvc:"", title:"PMRT + RNI toàn diện",
+       li:["<b>PMRT thành ngực + RNI toàn diện</b>, bao gồm phần nách chưa vét (mức 1)."],
+       cav:"Liều theo Bộ Y tế: thành ngực 45–50,4 Gy / 25–28 phân liều, có thể tăng cường sẹo mổ tới ~60 Gy; hạch vùng 45–50,4 Gy / 25–28 phân liều, 5 ngày/tuần."}},
+     {label:"Diện cắt dương tính (bất kỳ pT/pN)", tag:"R1", tagc:"r",
+      rec:{lvl:"2A", lvc:"r", title:"Ưu tiên cắt lại cho đến khi diện cắt âm",
+       li:["<b>Cắt lại để đạt diện cắt âm tính là lựa chọn ưu tiên.</b>",
+           "Nếu không khả thi: cân nhắc mạnh PMRT thành ngực ± RNI toàn diện."]}}]},
+   {label:"Đánh giá hạch nách — khi nào được bỏ", tag:"Hạch nách", tagc:"i",
+    rec:{lvl:"2A", lvc:"i", title:"Chiến lược hạch nách",
+     li:["<b>Sinh thiết hạch cửa</b> là chuẩn cho cN0; nếu hạch cửa âm → không vét nách.",
+         "<b>Có thể bỏ cả sinh thiết hạch cửa</b> ở người &gt;50 tuổi, đã mãn kinh, cT1N0 (siêu âm nách âm tính), HR+/HER2−, độ 1–2, đồng ý xạ toàn vú và nội tiết — theo <b>SOUND</b> và <b>INSEMA</b>. Thận trọng với thể tiểu thuỳ.",
+         "1–2 hạch cửa dương sau mổ bảo tồn kèm xạ toàn vú: không cần vét nách (<b>Z0011</b>).",
+         "Nếu hạch nghi ngờ trên lâm sàng/siêu âm: chọc hút hoặc sinh thiết kim trước, có đặt marker."]}}]},
+
+ {label:"BỔ TRỢ TOÀN THÂN THEO THỂ PHÂN TỬ", tag:"Bổ trợ", tagc:"p",
+  note:"NCCN chia theo mô học + HR + HER2 (BINV-4). Bộ Y tế dùng khung <b>St. Gallen 2015</b>: lòng ống A → nội tiết đơn thuần; lòng ống B HER2− → nội tiết + hoá trị; lòng ống B HER2+ → hoá trị + kháng HER2 + nội tiết; HER2+ không lòng ống → hoá trị + kháng HER2; bộ ba âm tính → hoá trị.",
+  children:[
+
+  /* --- HR+ / HER2- --- */
+  {label:"HR dương / HER2 âm", tag:"Lòng ống", tagc:"p",
+   note:"Nhóm lớn nhất và là nhóm khó quyết định hoá trị nhất. Công cụ chính là <b>xét nghiệm biểu hiện gen 21 gen (Oncotype DX Recurrence Score)</b>.",
+   children:[
+    {label:"Đã mãn kinh — pT1–3, pN0 hoặc pN1", tag:"Mãn kinh", tagc:"t",
+     children:[
+      {label:"pT1a (≤0,5 cm) và pN0", tag:"pT1a", tagc:"i",
+       rec:{lvl:"2B", lvc:"a", title:"Cân nhắc nội tiết bổ trợ", li:["Cân nhắc nội tiết bổ trợ (mức 2B). Không hoá trị."]}},
+      {label:"pT1b–T3 (>0,5 cm) hoặc pN1mi / pN1 (1–3 hạch)", tag:"RS 21 gen", tagc:"p",
+       rec:{lvl:"1", lvc:"", title:"Dựa vào Recurrence Score 21 gen",
+        li:["<b>Không phải ứng viên hoá trị</b> → nội tiết bổ trợ; cân nhắc thêm <b>abemaciclib hoặc ribociclib</b> nếu đủ tiêu chuẩn.",
+            "<b>Là ứng viên hoá trị</b> → cân nhắc mạnh <b>xét nghiệm 21 gen</b> (mức 1).",
+            "<b>RS ≥26</b> → hoá trị bổ trợ rồi nội tiết (mức 1); cân nhắc abemaciclib/ribociclib.",
+            "<b>RS &lt;26</b> → nội tiết đơn thuần (mức 1); cân nhắc abemaciclib/ribociclib."],
+        cav:"Theo <b>TAILORx</b>, u T1b độ thấp không xâm nhập mạch nên dùng nội tiết đơn thuần vì không nằm trong tiêu chuẩn thử nghiệm. Với pN1, bằng chứng từ <b>RxPONDER</b>. Các xét nghiệm gen khác (MammaPrint – <b>MINDACT</b>, Prosigna, EndoPredict, BCI) giúp đánh giá tiên lượng nhưng chưa được kiểm định để dự đoán đáp ứng hoá trị."}},
+      {label:"pN2/pN3 — ≥4 hạch dương", tag:"pN2–3", tagc:"r",
+       rec:{lvl:"1", lvc:"", title:"Hoá trị rồi nội tiết",
+        li:["<b>Hoá trị bổ trợ, tiếp theo là nội tiết</b> (mức 1).",
+            "Cân nhắc <b>abemaciclib</b> hoặc <b>ribociclib</b>; và <b>olaparib</b> nếu có đột biến BRCA1/2 dòng mầm."],
+        cav:"Rất ít dữ liệu về xét nghiệm gen ở nhóm ≥4 hạch — quyết định hoá trị dựa vào yếu tố lâm sàng."}}]},
+    {label:"Chưa mãn kinh — pT1–3, pN0", tag:"Chưa MK · pN0", tagc:"t",
+     rec:{lvl:"1", lvc:"", title:"Nội tiết ± ức chế buồng trứng, hoá trị theo RS",
+      li:["<b>pT1a và pN0</b> → cân nhắc nội tiết (mức 2B).",
+          "<b>pT1b–T3</b>, không phải ứng viên hoá trị → nội tiết ± ức chế/cắt buồng trứng; cân nhắc <b>ribociclib</b>.",
+          "Là ứng viên hoá trị → cân nhắc mạnh <b>21 gen</b> (mức 1): <b>RS ≤15</b> → nội tiết ± OFS; <b>RS 16–25</b> → nội tiết ± OFS, cân nhắc ribociclib; <b>RS ≥26</b> → hoá trị rồi nội tiết ± OFS."],
+      cav:"Ở người chưa mãn kinh có RS &lt;26, thêm hoá trị làm giảm tái phát xa so với nội tiết đơn thuần, nhưng chưa rõ lợi ích đến từ hoá trị hay từ tác dụng ức chế buồng trứng của hoá trị."}},
+    {label:"Chưa mãn kinh — pT1–3, pN dương", tag:"Chưa MK · pN+", tagc:"a",
+     rec:{lvl:"1", lvc:"", title:"Nội tiết ± OFS ± hoá trị; CDK4/6 cho nhóm nguy cơ cao",
+      li:["<b>pN1mi hoặc pN1 (1–3 hạch)</b>: không phải ứng viên hoá trị → nội tiết ± OFS, cân nhắc abemaciclib/ribociclib. Là ứng viên hoá trị → cân nhắc xét nghiệm gen để đánh giá tiên lượng; hoá trị rồi nội tiết ± OFS, hoặc nội tiết + OFS.",
+          "<b>pN2/pN3 (≥4 hạch)</b>: <b>hoá trị rồi nội tiết ± OFS</b> (mức 1); cân nhắc abemaciclib hoặc ribociclib, và olaparib nếu BRCA1/2 dòng mầm."]}},
+    {label:"Nội tiết bổ trợ — chọn thuốc và thời gian", tag:"Nội tiết", tagc:"p",
+     note:"ER dương định nghĩa là <b>1–100%</b> tế bào bắt màu. Nhóm <b>ER-low (1–10%)</b> hành xử gần giống ER âm — cân nhắc cá thể hoá.",
+     children:[
+      {label:"Chưa mãn kinh lúc chẩn đoán", tag:"Chưa MK", tagc:"t",
+       rec:{lvl:"1", lvc:"", title:"Tamoxifen hoặc AI + ức chế buồng trứng",
+        li:["<b>Tamoxifen 5 năm ± ức chế/cắt buồng trứng</b> (mức 1); cân nhắc abemaciclib nếu đủ tiêu chuẩn.",
+            "Hoặc <b>AI 5 năm + ức chế/cắt buồng trứng</b> (mức 1); cân nhắc abemaciclib hoặc ribociclib.",
+            "<b>Kéo dài</b>: nếu sau 5 năm đã mãn kinh → AI 5 năm, hoặc tamoxifen thêm 5 năm (đủ 10 năm); nếu vẫn chưa mãn kinh → tamoxifen thêm 5 năm, hoặc AI thêm 3–5 năm khi đang duy trì OFS."],
+        cav:"Chọn OFS theo <b>SOFT/TEXT</b>: ưu tiên cho người nguy cơ cao (tuổi trẻ, độ 3, di căn hạch). DFS 15 năm của SOFT: OFS+exemestane 73,5% — OFS+tamoxifen 70,5% — tamoxifen đơn thuần 67,0%. Thời gian OFS tối ưu 5 năm, tối thiểu 2 năm (<b>ASTRRA</b>). <b>AI đơn thuần không có tác dụng ở người chưa mãn kinh</b> — không dùng nếu chưa xác định được chức năng buồng trứng."}},
+      {label:"Đã mãn kinh lúc chẩn đoán", tag:"Đã MK", tagc:"t",
+       rec:{lvl:"1", lvc:"", title:"Ưu tiên khởi đầu bằng ức chế aromatase",
+        li:["<b>AI 5 năm</b> (mức 1) → cân nhắc AI thêm 3–5 năm.",
+            "Hoặc <b>AI 2–3 năm → tamoxifen cho đủ 5 năm</b> (mức 1).",
+            "Hoặc <b>tamoxifen 2–3 năm → AI cho đủ 5 năm</b>, hoặc AI thêm tới 5 năm (mức 2B).",
+            "Hoặc <b>tamoxifen 4,5–6 năm → AI 5 năm</b>, hoặc tamoxifen thêm 5 năm cho đủ 10 năm.",
+            "<b>Chống chỉ định / không dung nạp AI</b> → tamoxifen 5 năm (mức 1), cân nhắc tới 10 năm."],
+        cav:"Ba thuốc AI (anastrozole, exemestane, letrozole) tương đương về hiệu quả và độc tính. Có di căn hạch có thể hưởng lợi từ kéo dài AI tổng 7,5–10 năm."}},
+      {label:"Thêm CDK4/6 bổ trợ — tiêu chuẩn chọn bệnh", tag:"CDK4/6", tagc:"p",
+       rec:{lvl:"1", lvc:"", title:"Abemaciclib 2 năm hoặc ribociclib 3 năm",
+        li:["<b>Abemaciclib</b> 150 mg × 2 lần/ngày × 2 năm (mức 1, ưu tiên) — khi <b>≥4 hạch dương</b>, hoặc <b>1–3 hạch dương kèm độ 3 hoặc u ≥5 cm</b> (<b>monarchE</b>). Cân nhắc nguy cơ huyết khối khi phối hợp với tamoxifen.",
+            "<b>Ribociclib</b> 400 mg/ngày N1–21, chu kỳ 28 ngày × 3 năm, phối hợp AI (mức 1, ưu tiên) — khi <b>có bất kỳ di căn hạch</b> (trừ vi di căn), hoặc <b>hạch âm kèm u &gt;5 cm</b>, hoặc <b>u 2–5 cm kèm độ 3, hoặc độ 2 với nguy cơ gen cao / Ki-67 ≥20%</b> (<b>NATALEE</b>).",
+            "Dữ liệu chủ yếu ở nhóm đã nhận hoá trị bổ trợ/tân bổ trợ; còn ít dữ liệu ở nhóm không hoá trị.",
+            "Khi vừa đủ tiêu chuẩn olaparib vừa đủ tiêu chuẩn CDK4/6: <b>chưa rõ trình tự tối ưu</b>."]}},
+      {label:"Olaparib bổ trợ (BRCA1/2 dòng mầm)", tag:"PARPi", tagc:"p",
+       rec:{lvl:"1", lvc:"", title:"Olaparib 1 năm",
+        li:["<b>Olaparib 300 mg × 2 lần/ngày × 1 năm</b> (<b>OlympiA</b>) cho HR+/HER2− nguy cơ cao có đột biến BRCA1/2 dòng mầm, thường là pN2/pN3 hoặc còn bệnh sau điều trị tân bổ trợ.",
+            "Có thể dùng <b>đồng thời với nội tiết</b>; phải dùng <b>sau khi kết thúc xạ trị</b>."]}},
+      {label:"Thuốc bảo vệ xương", tag:"Xương", tagc:"i",
+       rec:{lvl:"2A", lvc:"i", title:"Bisphosphonate / denosumab",
+        li:["Cân nhắc <b>bisphosphonate bổ trợ 3–5 năm</b> để giảm nguy cơ di căn xa ở người <b>đã mãn kinh</b> (tự nhiên hoặc do điều trị) có hạch dương hoặc hạch âm nguy cơ cao.",
+            "Đo mật độ xương nền và định kỳ (DEXA 1–2 năm) khi dùng AI, nhất là &gt;65 tuổi, tiền sử gia đình, dùng corticoid kéo dài.",
+            "Khám răng dự phòng trước khi bắt đầu; bổ sung calci và vitamin D."],
+        cav:"Bộ Y tế: zoledronic acid, clodronate. Có báo cáo gãy xương tự phát sau khi ngưng denosumab."}}]}]},
+
+  /* --- HR+ / HER2+ --- */
+  {label:"HR dương / HER2 dương", tag:"Lòng ống B HER2+", tagc:"a",
+   rec:{lvl:"1", lvc:"", title:"Hoá trị + kháng HER2 + nội tiết, theo kích thước u và hạch",
+    li:["<b>pT1a (≤0,5 cm), pN0</b> → cân nhắc nội tiết; hoặc cân nhắc hoá trị + trastuzumab + nội tiết (mức 2B).",
+        "<b>pT1b (0,6–1,0 cm)</b> hoặc pN1mi → nội tiết; hoặc hoá trị + trastuzumab + nội tiết.",
+        "<b>pT1c–pT3 (&gt;1 cm), pN0/pN1mi</b> → <b>hoá trị + trastuzumab</b> (mức 1) ± pertuzumab (với pT2–T3) + nội tiết.",
+        "<b>pN dương (≥1 hạch &gt;2 mm)</b> → <b>hoá trị + pertuzumab + trastuzumab</b> (mức 1, ưu tiên) + nội tiết; hoặc hoá trị + trastuzumab (mức 1) + nội tiết."],
+    cav:"Lợi ích thêm pertuzumab ở nhóm hạch dương đã được khẳng định qua <b>APHINITY</b> (theo dõi trung vị 11,3 năm). Cân nhắc <b>neratinib kéo dài</b> sau trastuzumab bổ trợ ở HR+/HER2+ nguy cơ tái phát cao (<b>ExteNET</b>) — chưa rõ lợi ích/độc tính nếu đã dùng pertuzumab hoặc T-DM1. Lợi ích kháng HER2 không đáng kể khi u &lt;1 mm. Bộ Y tế: trastuzumab chuẩn 1 năm, trường hợp nguy cơ thấp hoặc hạn chế kinh tế có thể rút ngắn, <b>tối thiểu 9 tuần</b>."}},
+
+  /* --- HR- / HER2+ --- */
+  {label:"HR âm / HER2 dương", tag:"HER2+", tagc:"a",
+   rec:{lvl:"1", lvc:"", title:"Hoá trị + kháng HER2",
+    li:["<b>pT1a, pN0</b> → cân nhắc hoá trị + trastuzumab (mức 2B).",
+        "<b>pT1a với pN1mi, hoặc pT1b</b> → cân nhắc hoá trị + trastuzumab.",
+        "<b>pT1c–T3 (&gt;1 cm)</b> → <b>hoá trị + trastuzumab</b> (mức 1), thêm pertuzumab với pT2–T3.",
+        "<b>pN dương</b> → <b>hoá trị + pertuzumab + trastuzumab</b> (mức 1, ưu tiên); hoặc hoá trị + trastuzumab (mức 1)."],
+    cav:"<b>Paclitaxel + trastuzumab</b> (phác đồ APT, Tolaney NEJM 2015) là lựa chọn cho T1N0 nguy cơ thấp, nhất là khi bệnh kèm theo không cho phép phác đồ mạnh hơn. <b>Không dùng đồng thời trastuzumab/pertuzumab với anthracycline.</b>"}},
+
+  /* --- TNBC --- */
+  {label:"Bộ ba âm tính (HR âm / HER2 âm)", tag:"TNBC", tagc:"r",
+   rec:{lvl:"1", lvc:"", title:"Hoá trị là xương sống; olaparib nếu BRCA dòng mầm",
+    li:["<b>pT1a, pN0</b> → thường không điều trị bổ trợ; cân nhắc hoá trị (mức 2B) ở nhóm chọn lọc nguy cơ cao (tuổi trẻ, độ mô học cao).",
+        "<b>pT1a kèm pN1mi, hoặc pT1b</b> → cân nhắc hoá trị bổ trợ, và olaparib nếu BRCA1/2 dòng mầm.",
+        "<b>pT1c–pT3 (&gt;1 cm) hoặc pN dương</b> → <b>hoá trị bổ trợ</b> (mức 1), và <b>olaparib</b> nếu BRCA1/2 dòng mầm.",
+        "<b>Olaparib phải dùng sau khi kết thúc xạ trị.</b>"],
+    cav:"Giai đoạn II–III nên được xem xét điều trị <b>tân bổ trợ có pembrolizumab</b> thay vì mổ trước (xem nhánh Tân bổ trợ). Bộ Y tế: TNBC hưởng lợi từ hoá trị bổ trợ đặc biệt từ pT1bN0 trở lên."}},
+
+  /* --- Favorable histology --- */
+  {label:"Thể mô học thuận lợi", tag:"Thuận lợi", tagc:"i",
+   note:"Thể ống nhỏ (tubular), nhầy thuần tuý (mucinous), sàng thuần tuý (cribriform), tuyến nang (adenoid cystic) thể kinh điển, ung thư chế tiết và các ung thư dạng tuyến nước bọt khác, các thể dị sản độ thấp hiếm gặp. Chỉ xếp vào nhóm này khi <b>thuần tuý &gt;90%</b> trên bệnh phẩm mổ, không độ cao và HER2 âm.",
+   rec:{lvl:"2A", lvc:"i", title:"Chủ yếu là nội tiết",
+    li:["<b>ER và/hoặc PR dương, HER2 âm</b>: &lt;1 cm → cân nhắc nội tiết để giảm nguy cơ; 1–2,9 cm → cân nhắc nội tiết; ≥3 cm → nội tiết bổ trợ; pN dương → nội tiết ± hoá trị.",
+        "<b>ER và PR âm, HER2 âm</b>: dữ liệu hạn chế — chỉ điều trị tại chỗ, cân nhắc điều trị toàn thân/đích chỉ khi pN dương."],
+    cav:"Nếu có đặc điểm mô bệnh học hoặc lâm sàng không điển hình → điều trị như thể ống thông thường. Bộ Y tế: không cần điều trị hệ thống bổ trợ với thể chế tiết thiếu niên, tuyến nang và tiết rụng đầu nếu không có yếu tố nguy cơ cao; hoá trị cho thể tuỷ và thể dị sản."}}]}]},
+
+/* ================== 3. TÂN BỔ TRỢ ================== */
+{label:"ĐIỀU TRỊ TOÀN THÂN TRƯỚC MỔ (TÂN BỔ TRỢ)", tag:"Tân bổ trợ", tagc:"p",
+ note:"Giúp hạ giai đoạn để mổ bảo tồn, biến u không mổ được thành mổ được, và quan trọng nhất là <b>cung cấp thông tin tiên lượng cá thể</b> — còn bệnh sau điều trị thì được bổ sung phác đồ sau mổ. Tương quan giữa đáp ứng hoàn toàn mô bệnh học (pCR) và sống thêm mạnh nhất ở <b>TNBC</b>, kế đến HER2 dương, yếu nhất ở ER dương.",
+ children:[
+  {label:"Ai nên điều trị trước mổ", tag:"Chỉ định", tagc:"i",
+   rec:{lvl:"2A", lvc:"i", title:"Ứng viên và chống chỉ định",
+    li:["<b>Bệnh không mổ được</b>: ung thư vú thể viêm; hạch nách cN2 dính thành khối; cN3; u cT4.",
+        "<b>Bệnh mổ được — ưu tiên điều trị trước mổ khi</b>: HER2 dương hoặc TNBC nếu ≥cT2 hoặc ≥cN1; u lớn so với thể tích vú ở người muốn bảo tồn; cN dương có khả năng chuyển cN0.",
+        "<b>Có thể cân nhắc</b> với cT1c, cN0 của HER2 dương và TNBC.",
+        "<b>Không phù hợp</b>: tổn thương tại chỗ lan rộng khiến không xác định được ranh giới phần xâm nhập; u không sờ thấy hoặc không đánh giá được trên lâm sàng."],
+    cav:"Nội tiết tân bổ trợ đơn thuần chỉ dành cho một số ít trường hợp ER dương không thể hoá trị hoặc sinh học lòng ống nguy cơ thấp — thời gian tối ưu để đạt đáp ứng là <b>4–6 tháng</b> (ACOSOG Z1031)."}},
+  {label:"Bilan bắt buộc trước khi bắt đầu", tag:"Bilan", tagc:"i",
+   rec:{lvl:"2A", lvc:"i", title:"Chuẩn bị trước điều trị tân bổ trợ",
+    li:["<b>Sinh thiết lõi u vú kèm đặt clip/marker</b> đánh dấu giường u.",
+        "<b>Siêu âm (hoặc MRI) nách</b>; sinh thiết hạch nghi ngờ nhất và <b>đặt marker vào đúng hạch đó</b> để lấy lại khi mổ.",
+        "Công thức máu, sinh hoá đầy đủ gồm men gan và phosphatase kiềm.",
+        "Theo chỉ định lâm sàng: CT ngực ± cản quang; CT bụng ± chậu có cản quang hoặc MRI; xạ hình xương hoặc NaF PET/CT (mức 2B); FDG-PET/CT; MRI vú.",
+        "Đánh giá EF tim trước khi dùng anthracycline hoặc kháng HER2."],
+    cav:"FDG-PET/CT hữu ích nhất ở giai đoạn III và mô học ống; có thể thay hoặc bổ sung cho bilan chuẩn."}},
+  {label:"Phác đồ tân bổ trợ theo thể phân tử", tag:"Phác đồ", tagc:"p",
+   note:"Nhìn chung các phác đồ dùng bổ trợ đều dùng được trước mổ. Xem nhánh <b>Bảng phác đồ và liều</b> để tra liều chi tiết.",
+   rec:{lvl:"1", lvc:"", title:"Lựa chọn theo thể bệnh",
+    li:["<b>TNBC giai đoạn II–III</b>: <b>carboplatin/paclitaxel + pembrolizumab → doxorubicin (hoặc epirubicin)/cyclophosphamide + pembrolizumab</b>, sau mổ tiếp tục pembrolizumab (mức 1) — <b>KEYNOTE-522</b>. Lựa chọn khác: carboplatin/docetaxel + pembrolizumab (<b>NeoPACT</b>).",
+        "<b>TNBC giai đoạn I</b> hoặc không đủ điều kiện pembrolizumab: ddAC → paclitaxel (2 tuần hoặc hằng tuần), hoặc TC.",
+        "<b>HER2 dương</b>: <b>TCHP</b> (docetaxel/carboplatin + trastuzumab + pertuzumab) là phác đồ ưu tiên; hoặc AC → taxane + trastuzumab ± pertuzumab; hoặc taxane + pertuzumab + trastuzumab.",
+        "<b>HR+/HER2−</b>: ddAC → paclitaxel, hoặc TC. Cân nhắc làm xét nghiệm biểu hiện gen ngay trong bilan với cN0 (cả hai nhóm mãn kinh) và cN1 đã mãn kinh."],
+    cav:"Nên hoàn tất đủ phác đồ dự kiến trước mổ; phần chưa xong có thể bù sau mổ. Nếu bệnh tiến triển trong khi điều trị: đổi phác đồ khác hoặc mổ nếu còn cắt được."}},
+  {label:"Phẫu thuật và xạ trị sau tân bổ trợ", tag:"Sau mổ", tagc:"t",
+   children:[
+    {label:"Còn mổ bảo tồn được", tag:"BCS", tagc:"t",
+     rec:{lvl:"2A", lvc:"t", title:"BCS + đánh giá hạch nách; xạ theo cN ban đầu và ypN",
+      li:["<b>cN0 bất kỳ, ypN0</b> → xạ toàn vú ± boost giường u.",
+          "<b>cN1 và ypN0</b> → xạ toàn vú ± boost; <b>không chỉ định RNI toàn diện thường quy</b>.",
+          "<b>cN2–3 và ypN0</b> → xạ toàn vú ± boost + RNI toàn diện gồm phần nách nguy cơ.",
+          "<b>ypN dương bất kỳ</b> → xạ toàn vú ± boost + RNI toàn diện gồm phần nách nguy cơ."],
+      cav:"Khuyến cáo bỏ RNI cho cN1 → ypN0 dựa trên <b>NSABP B-51</b> (Mamounas, NEJM 2025) với thời gian theo dõi còn hạn chế — cần cân nhắc nguy cơ điều trị thiếu ở người trẻ, ER dương, còn bệnh ở vú hoặc nhiều yếu tố nguy cơ cổ điển."}},
+    {label:"Không mổ bảo tồn được", tag:"Mastectomy", tagc:"t",
+     rec:{lvl:"2A", lvc:"t", title:"Cắt tuyến vú + đánh giá hạch nách ± PMRT",
+      li:["<b>cT1–T3, cN0, ypN0</b> → không chỉ định PMRT + RNI thường quy.",
+          "<b>cT1–T3, cN1, ypN0</b> → không chỉ định PMRT + RNI thường quy (xem lưu ý B-51).",
+          "<b>cN2–3 và ypN0; ypN dương bất kỳ; cT4 bất kỳ N</b> → <b>PMRT + RNI toàn diện</b> gồm phần nách nguy cơ."],
+      cav:"Sinh thiết hạch cửa sau điều trị tân bổ trợ ở nhóm N dương ban đầu có tỷ lệ âm tính giả &gt;10%; giảm được bằng kỹ thuật <b>TAD</b>: đánh dấu hạch sinh thiết trước điều trị, dùng hai chất chỉ thị, lấy ≥3 hạch cửa và lấy đúng hạch đã đánh dấu."}}]},
+  {label:"Bổ trợ sau mổ dựa trên bệnh còn lại", tag:"Bệnh còn lại", tagc:"r",
+   note:"Đây là bước quyết định của chiến lược tân bổ trợ — <b>còn bệnh trên mô bệnh học thì phải leo thang điều trị</b>.",
+   children:[
+    {label:"HR dương / HER2 âm", tag:"HR+/HER2−", tagc:"p",
+     rec:{lvl:"1", lvc:"", title:"Nội tiết nền tảng, thêm olaparib và CDK4/6 khi còn bệnh",
+      li:["<b>ypT0N0 / pCR</b> → nội tiết bổ trợ (mức 1); cân nhắc ribociclib nếu đủ tiêu chuẩn.",
+          "<b>ypT1–4 N0 hoặc ypN ≥1</b> → nội tiết bổ trợ (mức 1) <b>+ olaparib nếu BRCA1/2 dòng mầm</b> (mức 1); cân nhắc <b>abemaciclib hoặc ribociclib</b>."]}},
+    {label:"HER2 dương (HR âm hoặc dương)", tag:"HER2+", tagc:"a",
+     rec:{lvl:"1", lvc:"", title:"pCR → hoàn tất 1 năm kháng HER2; còn bệnh → T-DM1 hoặc T-DXd",
+      li:["<b>ypT0N0 / pCR</b> → hoàn tất đủ 1 năm kháng HER2 bằng trastuzumab (mức 1) ± pertuzumab; nếu <b>hạch dương lúc chẩn đoán</b> → pertuzumab + trastuzumab (mức 1).",
+          "<b>Còn bệnh (ypT1–4 N0 hoặc ypN ≥1)</b> → <b>T-DM1 (ado-trastuzumab emtansine) 3,6 mg/kg mỗi 21 ngày × 14 chu kỳ</b> (mức 1) — <b>KATHERINE</b>.",
+          "Nếu ngưng T-DM1 vì độc tính → trastuzumab (mức 1) ± pertuzumab cho đủ 1 năm.",
+          "<b>Hoặc fam-trastuzumab deruxtecan (T-DXd) 5,4 mg/kg mỗi 21 ngày × 14 chu kỳ</b> (mức 1) cho nhóm <b>nguy cơ tái phát cao</b>: u không mổ được lúc đầu (cT4 N0–3 M0 hoặc cT1–3 N2–3 M0), hoặc u mổ được (cT1–3 N0–1 M0) mà <b>còn hạch dương sau điều trị (ypN1–3)</b> — <b>DESTINY-Breast05</b> (Loibl, NEJM 2025).",
+          "<b>Nếu HR dương</b> → thêm nội tiết bổ trợ (mức 1)."],
+      cav:"Khuyến cáo trên không áp dụng cho phần còn lại chỉ là DCIS (ypTis). Cân nhắc neratinib kéo dài ở HR+/HER2+ nguy cơ cao."}},
+    {label:"Bộ ba âm tính", tag:"TNBC", tagc:"r",
+     rec:{lvl:"1", lvc:"", title:"Pembrolizumab, capecitabine, olaparib",
+      li:["<b>ypT0N0 / pCR</b> → nếu đã dùng phác đồ có pembrolizumab trước mổ, tiếp tục <b>pembrolizumab bổ trợ</b> ở nhóm nguy cơ cao.",
+          "<b>Còn bệnh</b> → <b>pembrolizumab bổ trợ</b> nếu đã dùng trước mổ (mức 1), <b>và/hoặc capecitabine 6–8 chu kỳ</b> (<b>CREATE-X</b>), <b>và/hoặc olaparib 1 năm nếu BRCA1/2 dòng mầm</b> (mức 1)."],
+      cav:"Chưa có dữ liệu về trình tự hay phối hợp pembrolizumab với capecitabine hoặc olaparib; vẫn có thể cân nhắc dùng tuần tự/phối hợp vì nguy cơ tái phát cao. Bệnh nhân trong OlympiA không dùng capecitabine nên không có dữ liệu so sánh hai thuốc."}}]}]},
+
+/* ================== 4. GIAI ĐOẠN III / TIẾN XA TẠI CHỖ ================== */
+{label:"GIAI ĐOẠN III / TIẾN XA TẠI CHỖ, KHÔNG MỔ ĐƯỢC", tag:"GĐ III", tagc:"r",
+ note:"Không phải thể viêm. Chiến lược là <b>điều trị toàn thân trước → đánh giá lại khả năng mổ</b>.",
+ children:[
+  {label:"Có đáp ứng và u trở nên mổ được", tag:"Đáp ứng", tagc:"t",
+   rec:{lvl:"2A", lvc:"t", title:"Mổ triệt căn + xạ trị toàn diện + hoàn tất điều trị toàn thân",
+    li:["<b>Cắt tuyến vú + đánh giá hạch nách</b> ± tái tạo (tuỳ chọn); hoặc <b>mổ bảo tồn + đánh giá hạch nách</b> ± tạo hình ở trường hợp chọn lọc.",
+        "<b>Hoàn tất phác đồ toàn thân dự kiến</b> nếu chưa xong trước mổ, rồi xử trí theo bệnh còn lại (xem nhánh Tân bổ trợ).",
+        "<b>Xạ trị toàn vú hoặc thành ngực + RNI toàn diện</b>, bao gồm phần nách nguy cơ."],
+    cav:"Với T4 không phải thể viêm có xâm lấn da/thành ngực, bảo tồn vú chỉ đặt ra ở trường hợp rất chọn lọc sau hội chẩn đa chuyên khoa và khi tổn thương da đã hết hoàn toàn."}},
+  {label:"Không đáp ứng, vẫn không mổ được", tag:"Không đáp ứng", tagc:"r",
+   rec:{lvl:"2A", lvc:"r", title:"Đổi phác đồ toàn thân và/hoặc xạ trị tiền phẫu",
+    li:["Cân nhắc <b>phác đồ toàn thân khác</b> và/hoặc <b>xạ trị tiền phẫu</b>.",
+        "Đánh giá lại: nếu chuyển sang mổ được → theo nhánh trên; nếu vẫn không mổ được → cá thể hoá điều trị."],
+    cav:"Bộ Y tế: xạ vào toàn bộ vùng u lan rộng 50 Gy, tăng cường 10–26 Gy vào nơi còn bệnh tuỳ liều cơ quan nguy cơ; đánh giá lại khả năng mổ sau 45–50 Gy."}}]},
+
+/* ================== 5. IBC ================== */
+{label:"UNG THƯ VÚ THỂ VIÊM (IBC)", tag:"Thể viêm", tagc:"r",
+ note:"Chẩn đoán lâm sàng: <b>khởi phát nhanh ≤6 tháng</b> với đỏ, phù, da cam chiếm <b>≥1/3 tuyến vú</b>, có hoặc không có u sờ thấy, kèm xác nhận mô bệnh học là ung thư biểu mô xâm nhập. Xâm nhập bạch mạch trung bì có thể gặp nhưng <b>không bắt buộc</b> để chẩn đoán.",
+ children:[
+  {label:"Bilan ban đầu", tag:"Bilan", tagc:"i",
+   rec:{lvl:"2A", lvc:"i", title:"Bilan IBC",
+    li:["Khám bởi nhóm đa chuyên khoa và <b>chụp ảnh y khoa ghi nhận tổn thương da</b>.",
+        "Công thức máu, sinh hoá gồm men gan và phosphatase kiềm; ER/PR, HER2; tư vấn di truyền nếu có nguy cơ; tư vấn sinh sản nếu chưa mãn kinh.",
+        "Chụp nhũ ảnh hai bên, siêu âm; <b>CT ngực ± cản quang; CT bụng ± chậu có cản quang hoặc MRI; xạ hình xương hoặc FDG-PET/CT</b>; MRI vú (tuỳ chọn)."]}},
+  {label:"Điều trị khi có đáp ứng", tag:"Đáp ứng", tagc:"t",
+   rec:{lvl:"1", lvc:"", title:"Toàn thân trước → cắt tuyến vú triệt căn → xạ toàn diện",
+    li:["<b>Điều trị toàn thân trước mổ</b> theo thể phân tử; phác đồ có pertuzumab dùng được cho IBC HER2 dương.",
+        "<b>Cắt toàn bộ tuyến vú — chống chỉ định cắt tiết kiệm da và bảo tồn quầng núm</b> — kèm <b>vét hạch nách chặng I/II</b>.",
+        "<b>Xạ trị thành ngực + RNI toàn diện</b> gồm phần nách chưa vét. Tái tạo vú chỉ làm trì hoãn.",
+        "Hoàn tất phác đồ độc tế bào còn lại; nội tiết nếu ER/PR dương (tuần tự sau hoá trị); hoàn tất 1 năm kháng HER2 nếu HER2 dương (mức 1) — có thể dùng đồng thời với xạ và với nội tiết."],
+    cav:"<b>Không mổ bảo tồn trong IBC.</b>"}},
+  {label:"Không đáp ứng", tag:"Không đáp ứng", tagc:"r",
+   rec:{lvl:"2A", lvc:"r", title:"Đổi phác đồ và/hoặc xạ trị tiền phẫu",
+    li:["Cân nhắc phác đồ độc tế bào khác và/hoặc xạ trị tiền phẫu, rồi đánh giá lại.",
+        "Nếu vẫn không đáp ứng → cá thể hoá điều trị, ưu tiên mục tiêu giảm nhẹ."]}}]},
+
+/* ================== 6. TÁI PHÁT TẠI CHỖ – TẠI VÙNG ================== */
+{label:"TÁI PHÁT TẠI CHỖ – TẠI VÙNG", tag:"Tái phát", tagc:"a",
+ note:"Luôn hội chẩn đa chuyên khoa. Nguyên tắc chung: <b>điều trị toàn thân tới đáp ứng tốt nhất nếu có chỉ định → phẫu thuật lấy bỏ nếu khả thi → xạ trị nếu còn dư địa liều</b>.",
+ children:[
+  {label:"Tái phát tại vú hoặc thành ngực", tag:"Tại chỗ", tagc:"a",
+   rec:{lvl:"2A", lvc:"a", title:"Theo phẫu thuật ban đầu và tiền sử xạ trị",
+    li:["<b>Đã mổ bảo tồn, chưa xạ</b> → toàn thân nếu có chỉ định, rồi mổ bảo tồn lại hoặc cắt tuyến vú + cân nhắc đánh giá hạch nách + xạ trị.",
+        "<b>Đã mổ bảo tồn, đã xạ</b> → toàn thân nếu có chỉ định, rồi <b>cắt toàn bộ tuyến vú</b> + cân nhắc đánh giá hạch nách + xạ lại nếu khả thi.",
+        "<b>Đã cắt tuyến vú, chưa xạ</b> → toàn thân nếu có chỉ định, rồi cắt bỏ tổn thương nếu khả thi + cân nhắc đánh giá hạch nách + PMRT.",
+        "<b>Đã cắt tuyến vú, đã xạ</b> → toàn thân nếu có chỉ định, rồi cắt bỏ tổn thương nếu khả thi + xạ lại nếu khả thi."],
+    cav:"Mổ bảo tồn lại ± APBI/PBI chỉ dành cho trường hợp chọn lọc từ chối cắt tuyến vú và đạt tiêu chuẩn đồng thuận — dữ liệu còn ít. Quyết định xạ lại phải cộng dồn liều đã nhận và nguy cơ độc tính muộn của mô lành."}},
+  {label:"Tái phát hạch nách", tag:"Hạch nách", tagc:"a",
+   rec:{lvl:"2A", lvc:"a", title:"Vét nách và xạ trị nếu khả thi",
+    li:["<b>Trước đây chỉ sinh thiết hạch cửa</b> → toàn thân nếu có chỉ định, rồi cắt bỏ tổn thương kèm <b>vét hạch nách</b> + xạ nếu khả thi.",
+        "<b>Trước đây đã vét hạch nách</b> → toàn thân nếu có chỉ định, rồi cắt bỏ phần bệnh đại thể ± vét nách nếu khả thi + xạ nếu khả thi."]}},
+  {label:"Tái phát hạch thượng/hạ đòn hoặc vú trong", tag:"Hạch vùng", tagc:"a",
+   rec:{lvl:"2A", lvc:"a", title:"Xạ trị là trụ cột",
+    li:["<b>Chưa xạ vùng đó</b> → xạ trị (toàn diện hoặc khu trú).",
+        "<b>Đã xạ</b> → xạ lại nếu khả thi.",
+        "Cân nhắc điều trị toàn thân bổ trợ sau đó theo chỉ định lâm sàng."]}}]},
+
+/* ================== 7. GIAI ĐOẠN IV / DI CĂN ================== */
+{label:"GIAI ĐOẠN IV (M1) HOẶC TÁI PHÁT KHÔNG CẮT ĐƯỢC", tag:"Di căn", tagc:"r",
+ note:"Mục tiêu là kiểm soát triệu chứng, chất lượng sống và kéo dài sống thêm. <b>Sinh thiết lại ít nhất ở lần tái phát đầu tiên</b> để xác định lại ER/PR/HER2 (có thể đổi so với u nguyên phát). Làm <b>panel đa gen (soma và dòng mầm)</b> để tìm đích điều trị.",
+ children:[
+  {label:"Bilan và xét nghiệm dấu ấn", tag:"Bilan", tagc:"i",
+   rec:{lvl:"2A", lvc:"i", title:"Bilan giai đoạn IV",
+    li:["Công thức máu, sinh hoá gồm men gan và phosphatase kiềm.",
+        "<b>CT ngực ± cản quang; CT bụng ± chậu có cản quang hoặc MRI; xạ hình xương hoặc NaF PET/CT</b> (mức 2B). <b>MRI não</b> có cản quang nếu có triệu chứng thần kinh; <b>MRI cột sống</b> nếu đau lưng hoặc dấu chèn ép tuỷ.",
+        "Hữu ích trong một số tình huống: FDG-PET/CT (cân nhắc <b>FES-PET/CT</b> cho ER dương và mô học tiểu thuỳ); X-quang xương có triệu chứng và xương dài chịu lực bất thường trên xạ hình.",
+        "<b>Dấu ấn bắt buộc</b>: ER/PR, HER2 (phân biệt rõ IHC 0 / 0+ / 1+ / 2+ ISH âm vì ảnh hưởng chọn ADC), <b>BRCA1/2 dòng mầm cho mọi bệnh nhân</b>, PIK3CA/AKT1/PTEN, <b>ESR1 khi tiến triển sau nội tiết (ưu tiên ctDNA)</b>, PD-L1 CPS (22C3) cho TNBC, MSI-H/dMMR, TMB-H, NTRK, RET."],
+    cav:"ctDNA huyết tương và mô u đều dùng được; mô nhạy hơn với một số biến đổi (PTEN, TMB), ctDNA phản ánh tốt hơn tính không đồng nhất. Mẫu có tumor fraction thấp (&lt;1%) cần diễn giải thận trọng và cân nhắc xét nghiệm bổ sung."}},
+
+  {label:"HR dương / HER2 âm", tag:"HR+/HER2−", tagc:"p",
+   note:"<b>Nội tiết + CDK4/6 được ưu tiên hơn hoá trị</b>, kể cả khi di căn tạng lan rộng. Chỉ hoá trị khi có <b>cơn nguy kịch tạng</b> thực sự.",
+   children:[
+    {label:"Cơn nguy kịch tạng (visceral crisis)", tag:"Nguy kịch", tagc:"r",
+     rec:{lvl:"2A", lvc:"r", title:"Hoá trị độc tế bào ngay",
+      li:["Điều trị độc tế bào để kiểm soát nhanh.",
+          "Sau khi bệnh ổn định hoặc có đáp ứng, <b>được phép chuyển về điều trị nền nội tiết</b>.",
+          "Trong một số tình huống vẫn có thể cân nhắc nội tiết phối hợp đích (bộ đôi với CDK4/6 hoặc bộ ba với CDK4/6 + ức chế PI3K)."],
+      cav:"Định nghĩa theo đồng thuận ESO-ESMO lần 5: <b>rối loạn chức năng tạng nặng</b> xác định qua lâm sàng, xét nghiệm và tốc độ tiến triển — không phải chỉ là sự hiện diện của di căn tạng."}},
+    {label:"Bước 1 — chưa dùng nội tiết trong 1 năm qua", tag:"Bước 1", tagc:"p",
+     rec:{lvl:"1", lvc:"", title:"Ức chế aromatase + CDK4/6",
+      li:["<b>AI + ribociclib</b> (mức 1) · <b>AI + abemaciclib</b> · <b>AI + palbociclib</b>.",
+          "Chưa mãn kinh: <b>bắt buộc kèm ức chế hoặc cắt buồng trứng</b>, bắt đầu trước hoặc cùng lúc với nội tiết.",
+          "Có <b>đột biến PIK3CA</b>: cân nhắc bộ ba <b>fulvestrant + inavolisib + palbociclib</b> (mức 1, ưu tiên) — <b>INAVO120</b>.",
+          "Người rất yếu hoặc nhiều bệnh kèm: cân nhắc AI đơn thuần."],
+      cav:"Ribociclib là thuốc CDK4/6 có bằng chứng cải thiện sống thêm toàn bộ ở bước 1 trong các thử nghiệm pha 3 (<b>MONALEESA</b>). Chưa có so sánh trực tiếp giữa các thuốc CDK4/6."}},
+    {label:"Bước 1 — đang hoặc vừa ngưng nội tiết trong vòng 1 năm", tag:"Kháng sớm", tagc:"a",
+     rec:{lvl:"1", lvc:"", title:"Fulvestrant + CDK4/6",
+      li:["<b>Fulvestrant + ribociclib</b> (mức 1) · <b>fulvestrant + abemaciclib</b> (mức 1) · <b>fulvestrant + palbociclib</b>.",
+          "Có đột biến PIK3CA: <b>fulvestrant + inavolisib + palbociclib</b>.",
+          "Chưa mãn kinh: kèm ức chế/cắt buồng trứng."],
+      cav:"Fulvestrant + abemaciclib hoặc + ribociclib có lợi ích sống thêm toàn bộ ở bước 1 (<b>MONARCH 2</b>, <b>MONALEESA-3</b>)."}},
+    {label:"Bước 2 trở đi — theo dấu ấn sinh học", tag:"Bước 2+", tagc:"p",
+     rec:{lvl:"1", lvc:"", title:"Chọn theo đột biến tìm được",
+      li:["<b>Chưa từng dùng CDK4/6</b> → <b>fulvestrant + CDK4/6</b> (abemaciclib, palbociclib hoặc ribociclib) — mức 1.",
+          "<b>PIK3CA đột biến</b> → <b>alpelisib + fulvestrant</b> (mức 1, ưu tiên) — <b>SOLAR-1</b>.",
+          "<b>PIK3CA / AKT1 đột biến hoặc PTEN mất chức năng</b> → <b>capivasertib + fulvestrant</b> (mức 1, ưu tiên) — <b>CAPItello-291</b>, sau khi tiến triển trên nội tiết + CDK4/6.",
+          "<b>ESR1 đột biến</b> sau AI ± CDK4/6 → <b>elacestrant</b> (<b>EMERALD</b>) hoặc <b>imlunestrant</b>; <b>imlunestrant + abemaciclib</b> (<b>EMBER-3</b>) hữu ích ở nhóm có ESR1 và chưa dùng CDK4/6.",
+          "<b>Everolimus + nội tiết</b> (exemestane, fulvestrant hoặc tamoxifen) — <b>BOLERO-2</b> cho nhóm tiến triển trong hoặc trong vòng 12 tháng sau AI không steroid.",
+          "Lựa chọn khác: fulvestrant + AI (mức 1, <b>S0226</b>); fulvestrant; anastrozole; letrozole; tamoxifen; exemestane; megestrol acetate; estradiol; abemaciclib đơn trị."],
+      cav:"Đã tiến triển trên ức chế PI3K thì dữ liệu cho một phác đồ ức chế trục PI3K khác rất hạn chế; tương tự với everolimus. Sau <b>3 phác đồ nội tiết liên tiếp không còn lợi ích</b>, hoặc di căn tạng có triệu chứng → chuyển sang độc tế bào."}},
+    {label:"Chuyển sang độc tế bào và ADC", tag:"Độc tế bào", tagc:"r",
+     rec:{lvl:"1", lvc:"", title:"Trình tự theo HER2-low và BRCA",
+      li:["<b>Bước 1</b>: không có BRCA1/2 dòng mầm → hoá trị toàn thân (mức 1, ưu tiên; ưu tiên hoá trị đường uống); hoặc T-DXd. Có <b>BRCA1/2 dòng mầm</b> → <b>olaparib hoặc talazoparib</b> (mức 1, ưu tiên) — <b>OlympiAD</b>, <b>EMBRACA</b>.",
+          "<b>Bước 2</b>: <b>HER2 IHC 1+ hoặc 2+/ISH âm (HER2-low)</b> → <b>fam-trastuzumab deruxtecan</b> (mức 1, ưu tiên) — <b>DESTINY-Breast04</b>, <b>DESTINY-Breast06</b>. HER2 IHC 0+ → T-DXd (lựa chọn khác).",
+          "Không phải ứng viên T-DXd → <b>sacituzumab govitecan</b> (mức 1, ưu tiên) — <b>TROPiCS-02</b>; hoặc hoá trị; hoặc điều trị đích.",
+          "<b>Datopotamab deruxtecan</b> là lựa chọn khác từ bước 2 (<b>TROPION-Breast01</b> — không đạt tiêu chí sống thêm toàn bộ; chưa có dữ liệu ở người đã dùng ADC trước đó).",
+          "<b>Bước 3 trở đi</b>: hoá trị toàn thân; nếu có MSI-H, TMB-H, NTRK1/2/3 hoặc RET → thuốc đích tương ứng."],
+      cav:"T-DXd gây <b>bệnh phổi kẽ/viêm phổi</b> — phải theo dõi định kỳ; không có dữ liệu an toàn ở người có tiền sử ILD. Sacituzumab govitecan dùng sau nội tiết, CDK4/6 và ít nhất 2 phác đồ hoá trị (trong đó có taxane và ít nhất 1 phác đồ cho bệnh di căn)."}}]},
+
+  {label:"HR dương / HER2 dương", tag:"HR+/HER2+", tagc:"a",
+   rec:{lvl:"1", lvc:"", title:"Độc tế bào + kháng HER2, hoặc nội tiết + kháng HER2",
+    li:["<b>Độc tế bào + kháng HER2</b> (xem nhánh HER2 dương) — lựa chọn mặc định.",
+        "Hoặc <b>nội tiết ± kháng HER2</b> khi bệnh tiến triển chậm hoặc chống chỉ định hoá trị: <b>AI ± palbociclib + pertuzumab + trastuzumab</b>; AI ± trastuzumab; AI ± lapatinib; AI ± lapatinib + trastuzumab; fulvestrant ± trastuzumab; tamoxifen ± trastuzumab; abemaciclib/fulvestrant + trastuzumab (mức 2B).",
+        "Nếu khởi đầu bằng hoá trị + pertuzumab + trastuzumab rồi ngưng hoá trị, <b>có thể thêm nội tiết vào nền pertuzumab + trastuzumab</b>.",
+        "Chưa mãn kinh: kèm ức chế/cắt buồng trứng (hoặc tamoxifen đơn thuần + kháng HER2)."],
+    cav:"Nếu đã dùng nội tiết trong vòng 1 năm, chọn thuốc nội tiết khác nhóm. Bộ Y tế cho phép hoá trị đơn thuần hoặc nội tiết đơn thuần khi không có điều kiện dùng kháng HER2."}},
+
+  {label:"HER2 dương (HR âm hoặc dương) — trình tự kháng HER2", tag:"HER2+", tagc:"a",
+   rec:{lvl:"1", lvc:"", title:"Bộ đôi kháng HER2 bước 1, T-DXd bước 2, tucatinib cho di căn não",
+    li:["<b>Bước 1</b>: <b>docetaxel + pertuzumab + trastuzumab</b> (mức 1, ưu tiên) rồi duy trì pertuzumab + trastuzumab — <b>CLEOPATRA</b>; hoặc <b>paclitaxel + pertuzumab + trastuzumab</b> (ưu tiên). Nếu HR dương, có thể thêm AI ± palbociclib vào nền kháng HER2. Lựa chọn khác: T-DXd + pertuzumab (<b>DESTINY-Breast09</b>).",
+        "<b>Bước 2–3</b>: <b>capecitabine/tucatinib + trastuzumab</b> (mức 1, ưu tiên) — <b>HER2CLIMB</b>; <b>fam-trastuzumab deruxtecan</b> (mức 1, ưu tiên) — <b>DESTINY-Breast03</b>; hoặc T-DM1.",
+        "<b>Bước 4 trở đi</b> (chưa rõ trình tự tối ưu): docetaxel hoặc vinorelbine + trastuzumab; paclitaxel + trastuzumab ± carboplatin; capecitabine/lapatinib hoặc capecitabine + trastuzumab; lapatinib + trastuzumab không hoá chất; hoá chất khác + trastuzumab; capecitabine/neratinib; capecitabine/eribulin/gemcitabine/vinorelbine + margetuximab; abemaciclib/fulvestrant + trastuzumab (chỉ HR dương, mức 2B)."],
+    cav:"<b>Capecitabine/tucatinib + trastuzumab được ưu tiên khi có tiến triển ở cả hệ thần kinh trung ương và toàn thân.</b> T-DXd đơn trị có thể dùng bước 1 ở người tiến triển nhanh trong 6 tháng sau điều trị tân bổ trợ/bổ trợ (12 tháng nếu phác đồ có pertuzumab). <b>Không phối hợp trastuzumab/pertuzumab với anthracycline.</b> Có BRCA1/2 dòng mầm: NCCN vẫn ủng hộ dùng PARPi ở mọi thể, mức 2A cho HER2 dương."}},
+
+  {label:"Bộ ba âm tính di căn", tag:"TNBC", tagc:"r",
+   rec:{lvl:"1", lvc:"", title:"Phân nhánh theo PD-L1 CPS và BRCA dòng mầm",
+    li:["<b>Bước 1 · PD-L1 CPS ≥10</b> (bất kể BRCA) → <b>hoá trị (nab-paclitaxel, paclitaxel, hoặc carboplatin/gemcitabine) + pembrolizumab</b> (mức 1, ưu tiên) — <b>KEYNOTE-355</b>; hoặc <b>sacituzumab govitecan + pembrolizumab</b> (ưu tiên) — <b>ASCENT-04</b>.",
+        "<b>Bước 1 · CPS &lt;10, không BRCA dòng mầm</b> → <b>sacituzumab govitecan</b> (mức 1, ưu tiên) — <b>ASCENT-03</b>; hoặc datopotamab deruxtecan; hoặc hoá trị toàn thân.",
+        "<b>Bước 1 · CPS &lt;10, có BRCA1/2 dòng mầm</b> → <b>olaparib hoặc talazoparib</b> (mức 1, ưu tiên); hoặc <b>platin (carboplatin hoặc cisplatin)</b> (mức 1, ưu tiên).",
+        "<b>Bước 2</b>: có BRCA dòng mầm → PARPi (mức 1); <b>sacituzumab govitecan</b> (mức 1, ưu tiên) — <b>ASCENT</b>; nếu <b>HER2 IHC 1+ hoặc 2+/ISH âm</b> → T-DXd (lựa chọn khác).",
+        "<b>Bước 3 trở đi</b>: hoá trị toàn thân; thuốc đích nếu MSI-H, TMB-H, NTRK hoặc RET dương."],
+    cav:"Đã tiến triển trên một thuốc ức chế PD-1/PD-L1 thì không có dữ liệu cho thuốc ức chế điểm kiểm soát khác. Bộ Y tế nêu thêm lựa chọn <b>atezolizumab + nab-paclitaxel</b> cho TNBC PD-L1 dương."}},
+
+  {label:"Di căn xương và can thiệp tại chỗ", tag:"Di căn xương", tagc:"i",
+   rec:{lvl:"1", lvc:"", title:"Thuốc biến đổi xương và xử trí biến chứng",
+    li:["<b>Denosumab, acid zoledronic hoặc pamidronate</b> — mức 1 — phối hợp với điều trị toàn thân khi có di căn xương, kỳ vọng sống ≥3 tháng và chức năng thận cho phép. Luôn kèm <b>calci và vitamin D</b>; khám răng dự phòng trước khi bắt đầu. Lịch tối ưu của acid zoledronic là <b>mỗi 12 tuần</b>.",
+        "<b>Gãy xương dài hoặc nguy cơ gãy</b> → cố định xương rồi xạ trị; nếu không có nguy cơ gãy, xạ trị là lựa chọn.",
+        "<b>Chèn ép tuỷ sống là cấp cứu</b> — ưu tiên phẫu thuật giải ép; không mổ được thì xạ cấp cứu; tạo hình đốt sống là một lựa chọn.",
+        "<b>Di căn não</b>: tổn thương đơn ổ hoặc ít ổ → phẫu thuật hoặc xạ phẫu định vị; cân nhắc xạ toàn não khi nhiều tổn thương, cân đối với di chứng nhận thức.",
+        "U vỡ loét, đau do u, hạch chèn ép → xạ trị giảm nhẹ. Tràn dịch màng phổi/màng tim/màng bụng có triệu chứng → chọc tháo ± gây dính."],
+    cav:"<b>Bệnh di căn ít ổ (oligometastatic)</b>: lợi ích sống thêm của điều trị tại chỗ triệt để chưa được chứng minh trong thử nghiệm tiền cứu, nhưng có thể giảm tiến triển tại chỗ và giảm triệu chứng. Với di căn ít ổ <b>de novo</b> có yếu tố thuận lợi (HER2+ hoặc ER+, đạt tình trạng không còn bằng chứng bệnh sau phác đồ toàn thân tối ưu, ít vị trí, chỉ di căn xương, tuổi trẻ), tiếp cận đa mô thức tích cực có thể cân nhắc."}},
+
+  {label:"Khi nào dừng điều trị đặc hiệu", tag:"Giảm nhẹ", tagc:"r",
+   rec:{lvl:"2A", lvc:"r", title:"Đánh giá lại ở mỗi lần tiến triển",
+    li:["Mỗi lần đánh giá lại cần cân nhắc <b>giá trị của việc tiếp tục điều trị</b>, lợi ích – nguy cơ của một phác đồ nữa, thể trạng và mong muốn của bệnh nhân.",
+        "Tác dụng phụ của các phác đồ tiếp theo có thể vượt lợi ích ở người thể trạng suy giảm — <b>cân nhắc không điều trị đặc hiệu thêm</b> và duy trì chăm sóc nâng đỡ.",
+        "<b>Đưa nhóm chăm sóc giảm nhẹ vào sớm</b>: lập kế hoạch chăm sóc trước, bàn mục tiêu điều trị, hỗ trợ tâm lý xã hội, kiểm soát triệu chứng."]}}]},
+
+/* ================== 8. BẢNG PHÁC ĐỒ VÀ LIỀU ================== */
+{label:"BẢNG PHÁC ĐỒ VÀ LIỀU", tag:"Liều", tagc:"i",
+ note:"Liều chuẩn tham khảo lấy từ NCCN Breast Cancer v1.2026 (BINV-M, BINV-Q) và Hướng dẫn Bộ Y tế. <b>Luôn hiệu chỉnh theo chức năng gan thận, thể trạng, tuổi, bệnh kèm và quy trình của cơ sở.</b>",
+ children:[
+
+ {label:"Bổ trợ / tân bổ trợ — HER2 âm", tag:"HER2−", tagc:"p",
+  html:'<div class="tbl"><table><thead><tr><th>Phác đồ</th><th>Thuốc và liều</th><th>Chu kỳ</th></tr></thead><tbody>'+
+   '<tr><td><b>ddAC → P liều dày</b><br><span class="mono">ưu tiên</span></td><td>Doxorubicin 60 mg/m² N1 · Cyclophosphamid 600 mg/m² N1 → Paclitaxel 175 mg/m² N1</td><td>14 ngày × 4 → 14 ngày × 4 (có G-CSF)</td></tr>'+
+   '<tr><td><b>ddAC → paclitaxel hằng tuần</b><br><span class="mono">ưu tiên</span></td><td>Doxorubicin 60 mg/m² N1 · Cyclophosphamid 600 mg/m² N1 → Paclitaxel 80 mg/m²/tuần</td><td>14 ngày × 4 → 12 tuần</td></tr>'+
+   '<tr><td><b>TC</b><br><span class="mono">ưu tiên</span></td><td>Docetaxel 75 mg/m² N1 · Cyclophosphamid 600 mg/m² N1</td><td>21 ngày × 4–6</td></tr>'+
+   '<tr><td><b>Carbo/Pacli + pembrolizumab → AC (hoặc EC) + pembrolizumab → pembrolizumab bổ trợ</b> (KEYNOTE-522)</td><td>Pembrolizumab 200 mg N1 · Paclitaxel 80 mg/m² N1,8,15 · Carboplatin AUC 5 N1 (hoặc AUC 1,5 N1,8,15) × 4 chu kỳ → Pembrolizumab 200 mg + Doxorubicin 60 mg/m² (hoặc Epirubicin 90 mg/m²) + Cyclophosphamid 600 mg/m² N1 × 4 chu kỳ → Pembrolizumab 200 mg N1</td><td>21 ngày × 4 → 21 ngày × 4 → 21 ngày × 9 (bổ trợ)</td></tr>'+
+   '<tr><td><b>Carbo/Docetaxel + pembrolizumab</b> (NeoPACT)</td><td>Carboplatin AUC 6 N1 · Docetaxel 75 mg/m² N1 · Pembrolizumab 200 mg N1</td><td>21 ngày × 6 (có G-CSF)</td></tr>'+
+   '<tr><td><b>AC → docetaxel</b></td><td>Doxorubicin 60 mg/m² N1 · Cyclophosphamid 600 mg/m² N1 → Docetaxel 100 mg/m² N1</td><td>21 ngày × 4 → 21 ngày × 4</td></tr>'+
+   '<tr><td><b>AC</b></td><td>Doxorubicin 60 mg/m² N1 · Cyclophosphamid 600 mg/m² N1</td><td>21 ngày × 4 (Bộ Y tế: 4–6)</td></tr>'+
+   '<tr><td><b>EC</b></td><td>Epirubicin 100 mg/m² N1 · Cyclophosphamid 830 mg/m² N1</td><td>21 ngày × 8</td></tr>'+
+   '<tr><td><b>TAC</b></td><td>Docetaxel 75 mg/m² N1 · Doxorubicin 50 mg/m² N1 · Cyclophosphamid 500 mg/m² N1</td><td>21 ngày × 6 (có G-CSF)</td></tr>'+
+   '<tr><td><b>CMF</b></td><td>Cyclophosphamid 100 mg/m² uống N1–14 · Methotrexat 40 mg/m² N1,8 · Fluorouracil 600 mg/m² N1,8</td><td>28 ngày × 6</td></tr>'+
+   '<tr><td><b>Carboplatin/Paclitaxel</b></td><td>Carboplatin AUC 5–6 N1 · Paclitaxel 80 mg/m² N1,8,15 — hoặc Carboplatin AUC 1,5–2 N1,8,15 · Paclitaxel 80 mg/m² N1,8,15</td><td>21 ngày × 4 — hoặc 28 ngày × 6</td></tr>'+
+   '<tr><td><b>Carboplatin/Docetaxel</b></td><td>Carboplatin AUC 6 N1 · Docetaxel 75 mg/m² N1</td><td>21 ngày × 4–6 (có G-CSF)</td></tr>'+
+   '<tr><td><b>Capecitabine</b> sau tân bổ trợ còn bệnh (CREATE-X)</td><td>Capecitabine 1000–1250 mg/m² uống × 2 lần/ngày N1–14</td><td>21 ngày × 6–8</td></tr>'+
+   '<tr><td><b>Capecitabine duy trì</b> (SYSUCC-001)</td><td>Capecitabine 650 mg/m² uống × 2 lần/ngày N1–28</td><td>28 ngày × 1 năm</td></tr>'+
+   '<tr><td><b>Olaparib</b> (OlympiA)</td><td>Olaparib 300 mg uống × 2 lần/ngày N1–28</td><td>28 ngày × 1 năm</td></tr>'+
+   '<tr><td><b>Abemaciclib</b> (monarchE)</td><td>Abemaciclib 150 mg uống × 2 lần/ngày N1–28 + nội tiết</td><td>28 ngày × 2 năm</td></tr>'+
+   '<tr><td><b>Ribociclib</b> (NATALEE)</td><td>Ribociclib 400 mg uống/ngày N1–21 + ức chế aromatase</td><td>28 ngày × 3 năm</td></tr>'+
+   '</tbody></table></div>'},
+
+ {label:"Bổ trợ / tân bổ trợ — HER2 dương", tag:"HER2+", tagc:"a",
+  html:'<div class="tbl"><table><thead><tr><th>Phác đồ</th><th>Thuốc và liều</th><th>Chu kỳ</th></tr></thead><tbody>'+
+   '<tr><td><b>TCHP</b><br><span class="mono">ưu tiên</span></td><td>Docetaxel 75 mg/m² N1 · Carboplatin AUC 6 N1 · Trastuzumab 8 mg/kg N1 (tải) → 6 mg/kg · Pertuzumab 840 mg N1 (tải) → 420 mg</td><td>21 ngày × 6, sau đó duy trì kháng HER2 cho đủ 1 năm</td></tr>'+
+   '<tr><td><b>TCH</b></td><td>Docetaxel 75 mg/m² N1 · Carboplatin AUC 6 N1 · Trastuzumab (tải 4 mg/kg tuần 1 → 2 mg/kg × 17 tuần → 6 mg/kg mỗi 21 ngày)</td><td>21 ngày × 6, kháng HER2 đủ 1 năm</td></tr>'+
+   '<tr><td><b>Docetaxel + pertuzumab + trastuzumab</b></td><td>Docetaxel 75 mg/m² N1 · Trastuzumab 8 → 6 mg/kg · Pertuzumab 840 → 420 mg</td><td>21 ngày × 4, kháng HER2 đủ 1 năm</td></tr>'+
+   '<tr><td><b>Paclitaxel + trastuzumab</b> (APT — T1N0 nguy cơ thấp)</td><td>Paclitaxel 80 mg/m² hằng tuần × 12 tuần · Trastuzumab tải 4 mg/kg → 2 mg/kg/tuần, sau đó 6 mg/kg mỗi 21 ngày cho đủ 1 năm</td><td>12 tuần + duy trì</td></tr>'+
+   '<tr><td><b>AC → paclitaxel + trastuzumab ± pertuzumab</b></td><td>Doxorubicin 60 mg/m² · Cyclophosphamid 600 mg/m² N1 × 4 (21 hoặc 14 ngày) → Paclitaxel 80 mg/m² N1,8,15 (hoặc 175 mg/m² mỗi 14 ngày) + trastuzumab ± pertuzumab</td><td>đủ 1 năm kháng HER2</td></tr>'+
+   '<tr><td><b>AC → docetaxel + trastuzumab ± pertuzumab</b></td><td>AC × 4 → Docetaxel 75–100 mg/m² N1 × 4 + trastuzumab ± pertuzumab</td><td>21 ngày, kháng HER2 đủ 1 năm</td></tr>'+
+   '<tr><td><b>Cyclophosphamid/Docetaxel + trastuzumab</b></td><td>Cyclophosphamid 600 mg/m² N1 · Docetaxel 75 mg/m² N1 + trastuzumab</td><td>21 ngày × 4, kháng HER2 đủ 1 năm</td></tr>'+
+   '<tr><td><b>T-DM1</b> sau tân bổ trợ còn bệnh (KATHERINE)</td><td>Ado-trastuzumab emtansine 3,6 mg/kg N1</td><td>21 ngày × 14</td></tr>'+
+   '<tr><td><b>T-DXd</b> sau tân bổ trợ còn bệnh nguy cơ cao (DESTINY-Breast05)</td><td>Fam-trastuzumab deruxtecan 5,4 mg/kg N1</td><td>21 ngày × 14</td></tr>'+
+   '<tr><td><b>Neratinib</b> kéo dài (ExteNET)</td><td>120 mg/ngày N1–7 → 160 mg/ngày N8–14 → 240 mg/ngày N15–28, sau đó 240 mg/ngày</td><td>28 ngày × 13 chu kỳ (1 năm)</td></tr>'+
+   '<tr><td><b>Trastuzumab đơn thuần</b> (liều chuẩn)</td><td>TM: tải 8 mg/kg → 6 mg/kg mỗi 21 ngày; hoặc tải 4 mg/kg → 2 mg/kg hằng tuần. Dưới da: 600 mg cố định, không cần liều tải</td><td>đủ 1 năm</td></tr>'+
+   '</tbody></table></div>',
+  ev:{t:"Lưu ý khi dùng kháng HER2", li:[
+   "Đánh giá <b>EF tim trước điều trị và mỗi 3 tháng</b> theo nhãn thuốc.",
+   "<b>Không dùng đồng thời trastuzumab/pertuzumab với anthracycline.</b>",
+   "Dạng tiêm dưới da của trastuzumab + hyaluronidase và của pertuzumab + trastuzumab + hyaluronidase có liều và cách dùng <b>khác</b> dạng truyền tĩnh mạch; <b>không thay thế T-DM1 hay T-DXd bằng các dạng này</b>.",
+   "Bộ Y tế: thời gian trastuzumab chuẩn 1 năm; trường hợp nguy cơ thấp hoặc hạn chế kinh tế có thể rút ngắn, tối thiểu 9 tuần."]}},
+
+ {label:"Phác đồ bổ trợ bổ sung theo Bộ Y tế", tag:"Bộ Y tế", tagc:"t",
+  note:"Hướng dẫn Bộ Y tế liệt kê thêm nhiều phác đồ nền anthracycline – fluorouracil mà NCCN v1.2026 không còn nêu. Các phác đồ này phù hợp với điều kiện thực hành trong nước.",
+  html:'<div class="tbl"><table><thead><tr><th>Phác đồ</th><th>Thuốc và liều</th><th>Chu kỳ</th></tr></thead><tbody>'+
+   '<tr><td><b>FAC</b></td><td>Fluorouracil 500 mg/m² N1 (hoặc N1,4 / N1,8) · Doxorubicin 50 mg/m² N1 · Cyclophosphamid 500 mg/m² N1</td><td>21 ngày × 6</td></tr>'+
+   '<tr><td><b>4FAC → 4P</b></td><td>FAC × 4 → Paclitaxel 225 mg/m² N1</td><td>21 ngày × 4 → 21 ngày × 4</td></tr>'+
+   '<tr><td><b>4FAC → paclitaxel hằng tuần</b></td><td>FAC × 4 → Paclitaxel 80 mg/m²/tuần × 12 tuần</td><td>21 ngày × 4 → 12 tuần</td></tr>'+
+   '<tr><td><b>FEC</b></td><td>Fluorouracil 600 mg/m² N1 · Epirubicin 90 mg/m² N1 · Cyclophosphamid 600 mg/m² N1</td><td>21 ngày</td></tr>'+
+   '<tr><td><b>3FEC → 3D</b></td><td>Fluorouracil 500 mg/m² · Epirubicin 100 mg/m² · Cyclophosphamid 500 mg/m² N1 × 3 → Docetaxel 100 mg/m² N1 × 3</td><td>21 ngày × 3 → 21 ngày × 3</td></tr>'+
+   '<tr><td><b>4FEC → 4P</b></td><td>Fluorouracil 500 mg/m² N1,3 · Epirubicin 75 mg/m² N1 · Cyclophosphamid 500 mg/m² N1 × 4 → Paclitaxel 225 mg/m² N1 × 4</td><td>21 ngày</td></tr>'+
+   '<tr><td><b>4EC → 4D</b></td><td>Epirubicin 90 mg/m² N1 · Cyclophosphamid 600 mg/m² N1 × 4 → Docetaxel 100 mg/m² N1 × 4</td><td>21 ngày</td></tr>'+
+   '<tr><td><b>CAF</b></td><td>Cyclophosphamid 600 mg/m² N1 · Doxorubicin 60 mg/m² N1 · Fluorouracil 600 mg/m² N1</td><td>28 ngày × 4</td></tr>'+
+   '<tr><td><b>CMF &gt;60 tuổi</b></td><td>Cyclophosphamid 100 mg/m² uống N1–14 · Methotrexat 30 mg/m² N1,8 · Fluorouracil 400 mg/m² N1,8</td><td>28 ngày × 6</td></tr>'+
+   '<tr><td><b>Paclitaxel đơn thuần</b></td><td>Paclitaxel 80 mg/m² hằng tuần</td><td>12 tuần</td></tr>'+
+   '<tr><td><b>Capecitabine</b> sau tân bổ trợ còn bệnh</td><td>Capecitabine 2000–2500 mg/m²/ngày, chia 2 lần, uống N1–14</td><td>21 ngày × 6–8</td></tr>'+
+   '</tbody></table></div>'},
+
+ {label:"Nội tiết và CDK4/6 — liều", tag:"Nội tiết", tagc:"p",
+  html:'<div class="tbl"><table><thead><tr><th>Thuốc</th><th>Liều</th><th>Ghi chú</th></tr></thead><tbody>'+
+   '<tr><td><b>Tamoxifen</b></td><td>20 mg uống/ngày</td><td>Liều thấp 5 mg/ngày hoặc 10 mg cách ngày nếu không dung nạp. Không xét nghiệm CYP2D6.</td></tr>'+
+   '<tr><td><b>Anastrozole</b></td><td>1 mg uống/ngày</td><td rowspan="3">Ba thuốc AI tương đương về hiệu quả và độc tính. Chỉ dùng cho người đã mãn kinh hoặc có ức chế buồng trứng.</td></tr>'+
+   '<tr><td><b>Letrozole</b></td><td>2,5 mg uống/ngày</td></tr>'+
+   '<tr><td><b>Exemestane</b></td><td>25 mg uống/ngày</td></tr>'+
+   '<tr><td><b>Fulvestrant</b></td><td>500 mg tiêm bắp N1, 15, 29 rồi mỗi 28 ngày</td><td>Tiêm hai bên mông.</td></tr>'+
+   '<tr><td><b>Goserelin</b></td><td>3,6 mg tiêm dưới da mỗi 4 tuần, hoặc 10,8 mg mỗi 12 tuần</td><td rowspan="3">Ức chế buồng trứng. Thời gian tối ưu 5 năm (SOFT/TEXT), tối thiểu 2 năm. Có thể khởi đầu trước hoặc cùng hoá trị.</td></tr>'+
+   '<tr><td><b>Leuprolide</b></td><td>3,75–7,5 mg tiêm bắp/dưới da mỗi 4 tuần, hoặc 11,25–22,5 mg mỗi 12 tuần</td></tr>'+
+   '<tr><td><b>Triptorelin</b></td><td>3,75 mg tiêm bắp mỗi 4 tuần, hoặc 11,25 mg mỗi 12 tuần</td></tr>'+
+   '<tr><td><b>Ribociclib</b></td><td>Bổ trợ 400 mg/ngày N1–21 (28 ngày) × 3 năm · Di căn 600 mg/ngày N1–21 (28 ngày)</td><td>Theo dõi QTc, men gan, bạch cầu hạt.</td></tr>'+
+   '<tr><td><b>Abemaciclib</b></td><td>Bổ trợ 150 mg × 2 lần/ngày × 2 năm · Di căn 150 mg × 2 lần/ngày (phối hợp) hoặc 200 mg × 2 lần/ngày (đơn trị)</td><td>Tiêu chảy là độc tính giới hạn liều. Cân nhắc nguy cơ huyết khối khi phối hợp tamoxifen.</td></tr>'+
+   '<tr><td><b>Palbociclib</b></td><td>125 mg/ngày N1–21, chu kỳ 28 ngày</td><td>Giảm bạch cầu hạt thường gặp.</td></tr>'+
+   '<tr><td><b>Everolimus</b></td><td>10 mg uống/ngày</td><td>Phối hợp exemestane, fulvestrant hoặc tamoxifen. Viêm niêm mạc miệng, tăng đường huyết, viêm phổi.</td></tr>'+
+   '<tr><td><b>Alpelisib</b></td><td>300 mg uống/ngày + fulvestrant</td><td>PIK3CA đột biến. Tăng đường huyết, ban da.</td></tr>'+
+   '<tr><td><b>Capivasertib</b></td><td>400 mg × 2 lần/ngày, 4 ngày dùng – 3 ngày nghỉ + fulvestrant</td><td>PIK3CA/AKT1 đột biến hoặc PTEN mất chức năng.</td></tr>'+
+   '<tr><td><b>Elacestrant</b></td><td>345 mg uống/ngày</td><td>ESR1 đột biến, sau AI ± CDK4/6.</td></tr>'+
+   '</tbody></table></div>'},
+
+ {label:"Giai đoạn di căn — đơn chất, ADC và thuốc đích", tag:"Di căn", tagc:"r",
+  html:'<div class="tbl"><table><thead><tr><th>Nhóm</th><th>Thuốc và liều</th></tr></thead><tbody>'+
+   '<tr><td><b>Anthracycline</b><br><span class="mono">ưu tiên</span></td><td>Doxorubicin 60–75 mg/m² N1 mỗi 21 ngày, hoặc 20 mg/m² hằng tuần · Doxorubicin liposom 50 mg/m² N1 mỗi 28 ngày · Epirubicin 60–90 mg/m² N1 mỗi 21 ngày</td></tr>'+
+   '<tr><td><b>Taxane</b><br><span class="mono">ưu tiên</span></td><td>Paclitaxel 175 mg/m² N1 mỗi 21 ngày, hoặc 80 mg/m² hằng tuần · Docetaxel 60–100 mg/m² N1 mỗi 21 ngày · Nab-paclitaxel (tuần ≤125 mg/m²)</td></tr>'+
+   '<tr><td><b>Chống chuyển hoá</b><br><span class="mono">ưu tiên</span></td><td>Capecitabine 1000–1250 mg/m² × 2 lần/ngày N1–14 mỗi 21 ngày · Gemcitabine 800–1200 mg/m² N1,8,15 mỗi 28 ngày</td></tr>'+
+   '<tr><td><b>Ức chế vi ống</b><br><span class="mono">ưu tiên</span></td><td>Eribulin 1,4 mg/m² N1,8 mỗi 21 ngày · Vinorelbine 25 mg/m² TM hằng tuần, hoặc uống 60–80 mg/m²/tuần · Metronomic: vinorelbine 30–50 mg uống N1,3,5 hằng tuần</td></tr>'+
+   '<tr><td><b>Platin</b></td><td>Carboplatin AUC 6 N1 mỗi 21–28 ngày · Cisplatin 75 mg/m² N1 mỗi 21 ngày (ưu tiên cho TNBC, BRCA dòng mầm)</td></tr>'+
+   '<tr><td><b>Phối hợp</b></td><td>Carboplatin/Gemcitabine · GT (Gemcitabine/Paclitaxel) · Capecitabine/Docetaxel · AC · EC · CMF · Carboplatin + paclitaxel hoặc nab-paclitaxel</td></tr>'+
+   '<tr><td><b>Ức chế PARP</b></td><td>Olaparib 300 mg × 2 lần/ngày · Talazoparib 1 mg uống/ngày</td></tr>'+
+   '<tr><td><b>ADC</b></td><td>Fam-trastuzumab deruxtecan (T-DXd) 5,4 mg/kg mỗi 21 ngày · Ado-trastuzumab emtansine (T-DM1) 3,6 mg/kg mỗi 21 ngày · Sacituzumab govitecan 10 mg/kg N1,8 mỗi 21 ngày · Datopotamab deruxtecan 6 mg/kg mỗi 21 ngày</td></tr>'+
+   '<tr><td><b>Kháng HER2</b></td><td>Trastuzumab tải 8 → 6 mg/kg mỗi 21 ngày · Pertuzumab tải 840 → 420 mg mỗi 21 ngày · Tucatinib 300 mg × 2 lần/ngày · Lapatinib 1250 mg/ngày (với capecitabine) · Neratinib 240 mg/ngày · Margetuximab 15 mg/kg mỗi 21 ngày</td></tr>'+
+   '<tr><td><b>Miễn dịch</b></td><td>Pembrolizumab 200 mg mỗi 21 ngày (hoặc 400 mg mỗi 42 ngày) · Atezolizumab + nab-paclitaxel (tuỳ chọn theo Bộ Y tế) · Dostarlimab (MSI-H/dMMR)</td></tr>'+
+   '<tr><td><b>Đích theo dấu ấn hiếm</b></td><td>Entrectinib · Larotrectinib · Repotrectinib (NTRK fusion) · Selpercatinib (RET fusion) · Erdafitinib (FGFR1-3, mức 2B)</td></tr>'+
+   '<tr><td><b>Thuốc biến đổi xương</b></td><td>Acid zoledronic 4 mg TM mỗi 12 tuần · Pamidronate 90 mg TM mỗi 3–4 tuần · Denosumab 120 mg tiêm dưới da mỗi 4 tuần — luôn kèm calci và vitamin D</td></tr>'+
+   '</tbody></table></div>',
+  risk:{t:"Giảm độc tính khi hoá trị", li:[
+   "Người có nguy cơ cao bệnh thần kinh ngoại biên do taxane (gốc Phi, đái tháo đường) nên ưu tiên <b>docetaxel</b> (ECOG-ACRIN EAZ171).",
+   "Cân nhắc <b>làm lạnh bàn tay – bàn chân</b> và băng ép găng để giảm bệnh thần kinh ngoại biên do taxane (<b>POLAR</b>, JAMA Oncol 2025).",
+   "Cân nhắc <b>làm lạnh da đầu</b> để giảm rụng tóc — hiệu quả kém hơn với phác đồ có anthracycline.",
+   "Có thể thay thế taxane cho nhau khi cần (quá mẫn); nếu thay cho paclitaxel hoặc docetaxel hằng tuần thì <b>nab-paclitaxel không vượt quá 125 mg/m²/tuần</b>.",
+   "Hoá trị và nội tiết dùng <b>tuần tự</b> — nội tiết sau hoá trị. Olaparib bổ trợ có thể dùng <b>đồng thời</b> với nội tiết nhưng phải sau khi kết thúc xạ trị."]}}]},
+
+/* ================== 9. THEO DÕI ================== */
+{label:"THEO DÕI SAU ĐIỀU TRỊ TRIỆT CĂN", tag:"Theo dõi", tagc:"i",
+ rec:{lvl:"2A", lvc:"i", title:"Lịch theo dõi và các việc phải làm",
+  li:["<b>Khám lâm sàng 1–4 lần/năm trong 5 năm</b>, sau đó hằng năm.",
+      "<b>Nhũ ảnh mỗi 12 tháng</b>, bắt đầu từ 6–12 tháng sau khi kết thúc xạ trị bảo tồn. Không chụp thường quy vú đã tái tạo sau cắt tuyến vú.",
+      "<b>Không chỉ định xét nghiệm hay chẩn đoán hình ảnh tầm soát di căn</b> khi không có dấu hiệu lâm sàng gợi ý.",
+      "<b>Đang dùng tamoxifen</b>: tầm soát phụ khoa theo tuổi; <b>không siêu âm tiểu khung thường quy hằng năm</b>.",
+      "<b>Đang dùng AI hoặc suy buồng trứng do điều trị</b>: đo mật độ xương nền và định kỳ.",
+      "<b>Theo dõi độc tính tim</b> ở người đã xạ trị vú trái, dùng anthracycline hoặc kháng HER2.",
+      "Đánh giá và khuyến khích <b>tuân thủ nội tiết bổ trợ</b> — đây là yếu tố quyết định hiệu quả.",
+      "Giáo dục, theo dõi và chuyển khám <b>phù bạch huyết</b>; tầm soát lo âu, trầm cảm, sợ tái phát.",
+      "Lối sống: vận động, chế độ ăn lành mạnh, hạn chế rượu, duy trì BMI 20–25. <b>Liệu pháp hormone mãn kinh là chống chỉ định tương đối.</b>"],
+  cav:"Tầm soát di truyền: rà soát lại tiền sử gia đình định kỳ và chuyển tư vấn di truyền khi có chỉ định mới."}}
+
+]};
+
+/* =======================================================================
+   UNG THƯ DẠ DÀY — NCCN Gastric Cancer v4.2026
+   ======================================================================= */
+var STOMACH = {label:"UNG THƯ DẠ DÀY", tag:"Dạ dày", tagc:"dd",
  note:"<b>Thay đổi lớn ở v4.2026</b>: xét nghiệm <b>MSI/MMR</b> và <b>PD-L1 cho MỌI bệnh nhân mới chẩn đoán</b> (trước đây PD-L1 chỉ làm khi bệnh tiến xa); <b>HER2 và CLDN18.2</b> khi bệnh tiến xa hoặc di căn; cân nhắc NGS. Nội soi ổ bụng kèm tế bào dịch rửa chỉ định <b>từ cT1b trở lên</b> khi cân nhắc điều trị tại chỗ.",
  children:[
 
@@ -633,12 +1170,12 @@ children:[
      li:["Khám mỗi 3–6 tháng trong 1–2 năm, sau đó mỗi 6–12 tháng tới năm thứ 5.",
          "Cắt bán phần: nội soi theo chỉ định lâm sàng.",
          "<b>CT ngực/bụng/chậu mỗi 6 tháng trong 2 năm đầu, sau đó hằng năm tới 5 năm.</b>",
-         "Theo dõi và bổ sung vitamin B12, sắt, kẽm, calci, vitamin D suốt đời sau cắt toàn bộ dạ dày."]}}]}]},
+         "Theo dõi và bổ sung vitamin B12, sắt, kẽm, calci, vitamin D suốt đời sau cắt toàn bộ dạ dày."]}}]}]};
 
-/* =====================================================================
-   ========================= THỰC QUẢN & EGJ ===========================
-   ===================================================================== */
-{label:"UNG THƯ THỰC QUẢN & CHỖ NỐI DẠ DÀY – THỰC QUẢN", tag:"Thực quản", tagc:"t",
+/* =======================================================================
+   UNG THƯ THỰC QUẢN & EGJ — NCCN Esophageal and EGJ Cancers v4.2026
+   ======================================================================= */
+var ESOPH = {label:"UNG THƯ THỰC QUẢN & CHỖ NỐI DẠ DÀY – THỰC QUẢN", tag:"Thực quản", tagc:"tq",
  note:"Nhánh đầu tiên luôn là <b>mô học</b>: biểu mô vảy và biểu mô tuyến đi hai đường khác nhau ở bệnh khu trú. Ở giai đoạn tiến xa, biểu mô tuyến dùng chung phác đồ với ung thư dạ dày; biểu mô vảy có bảng riêng.",
  children:[
 
@@ -931,8 +1468,8 @@ children:[
       rec:{lvl:"2A", lvc:"t", title:"Cắt thực quản cứu vớt",
        li:["Phẫu thuật cắt thực quản; nếu tái phát tiếp → chuyển giảm nhẹ."]}},
      {label:"Không mổ được hoặc không đủ sức khoẻ", tag:"Không mổ", tagc:"r",
-      rec:{lvl:"2A", lvc:"r", title:"Chuyển điều trị giảm nhẹ", li:["Điều trị toàn thân và/hoặc chăm sóc giảm nhẹ."]}}]}]}]}
-]};
+      rec:{lvl:"2A", lvc:"r", title:"Chuyển điều trị giảm nhẹ", li:["Điều trị toàn thân và/hoặc chăm sóc giảm nhẹ."]}}]}]}]};
+
 /* =======================================================================
    U LYMPHO DÒNG TẾ BÀO B
    Nguồn: NCCN B-Cell Lymphomas v4.2026 (20/05/2026)
@@ -2608,12 +3145,13 @@ children:[
    BẢNG TRA CỨU — phác đồ kèm liều, tiêu chuẩn đáp ứng, phân loại
    ======================================================================= */
 
-var REF = {
-label:"BẢNG TRA CỨU", tag:"Tra cứu", tagc:"i",
-note:"Liều trong các bảng dưới đây là <b>liều chuẩn tham khảo</b> lấy từ các thử nghiệm gốc đã được NCCN trích dẫn. <b>Luôn đối chiếu với quy trình của cơ sở</b> và hiệu chỉnh theo chức năng gan thận, thể trạng, tuổi và bệnh kèm trước khi kê.",
-children:[
 
-/* ---------- PHÁC ĐỒ U LYMPHO ---------- */
+/* =======================================================================
+   TRA CỨU U LYMPHO — phác đồ, Lugano, thang tiên lượng
+   ======================================================================= */
+var LYM_REF = {
+label:"TRA CỨU — PHÁC ĐỒ, ĐÁP ỨNG, TIÊN LƯỢNG", tag:"Tra cứu", tagc:"i",
+children:[
 {label:"PHÁC ĐỒ U LYMPHO — liều chuẩn", tag:"Liều", tagc:"i",
  children:[
   {label:"Phác đồ nền tảng dòng B", tag:"Dòng B", tagc:"p",
@@ -2674,9 +3212,8 @@ children:[
         '<tr><td>DLBCL — củng cố sau hoá miễn dịch</td><td><b>ISRT 30–36 Gy</b></td></tr>'+
         '<tr><td>ENKL thể mũi — thành phần thiết yếu của điều trị</td><td><b>45–50,4 Gy</b> (theo kế hoạch MRI/CT trước điều trị)</td></tr>'+
         '</tbody></table></div>',
-   note:"Liều xạ cụ thể phải theo <b>Principles of Radiation Therapy</b> của từng bộ hướng dẫn NCCN (NHODG-D cho u lympho không Hodgkin; TCLYM-D cho u lympho dòng T; HODG-C cho Hodgkin) và kế hoạch của bác sĩ xạ trị."}]},
+   note:"Liều xạ cụ thể phải theo <b>Principles of Radiation Therapy</b> của từng bộ hướng dẫn NCCN (NHODG-D cho u lympho không Hodgkin; TCLYM-D cho u lympho dòng T; HODG-C cho Hodgkin) và kế hoạch của bác sĩ xạ trị."}]},,
 
-/* ---------- LUGANO ---------- */
 {label:"TIÊU CHUẨN LUGANO 2014", tag:"Lugano", tagc:"i",
  note:"Cheson BD và cộng sự, J Clin Oncol 2014;32:3059-3068 (đáp ứng) và 3048-3058 (xếp giai đoạn). Áp dụng cho <b>mọi u lympho Hodgkin và không Hodgkin</b>, trừ các bệnh không ở hạch như HSTCL.",
  children:[
@@ -2704,38 +3241,8 @@ children:[
         '<tr><td><b>Bệnh ổn định</b></td><td>Giảm &lt;50% SPD và không đạt tiêu chuẩn tiến triển</td><td>Không thay đổi</td><td>Không</td></tr>'+
         '<tr><td><b>Bệnh tiến triển</b></td><td><b>Tăng ≥50% SPD từ mức thấp nhất</b>, kèm tăng ≥0,5 cm (hạch ≤2 cm) hoặc ≥1,0 cm (hạch &gt;2 cm) ở LDi hoặc đường kính ngắn nhất</td><td>Lách tăng &gt;50% phần vượt quá bình thường</td><td><b>Có — hạch mới &gt;1,5 cm ở bất kỳ trục nào</b></td></tr>'+
         '</tbody></table></div>',
-   note:"<b>Chọn tối đa 6 tổn thương mục tiêu</b> có thể đo được ở hai đường kính vuông góc, đại diện cho toàn bộ gánh nặng bệnh, từ nhiều vùng cơ thể khác nhau, và nếu có thì bao gồm cả trung thất và sau phúc mạc."}]},
+   note:"<b>Chọn tối đa 6 tổn thương mục tiêu</b> có thể đo được ở hai đường kính vuông góc, đại diện cho toàn bộ gánh nặng bệnh, từ nhiều vùng cơ thể khác nhau, và nếu có thì bao gồm cả trung thất và sau phúc mạc."}]},,
 
-/* ---------- WHO-HAEM5 ---------- */
-{label:"PHÂN LOẠI WHO-HAEM5 (2022) — U LYMPHO", tag:"WHO5", tagc:"i",
- note:"Alaggio R và cộng sự, Leukemia 2022;36:1720-1748. Phân loại song song là <b>ICC 2022</b> (Campo E, Blood 2022;140:1229-1253). Ở nhiều chỗ hai hệ thống dùng tên khác nhau cho cùng một thực thể — bảng dưới ghi cả hai.",
- children:[
-  {label:"Những thay đổi quan trọng nhất của WHO-HAEM5", tag:"Thay đổi", tagc:"i",
-   rec:{lvl:"—", lvc:"i", title:"Điểm cần nhớ khi đọc kết quả giải phẫu bệnh",
-    li:["<b>U lympho thể nang</b>: WHO5 bỏ phân độ 1, 2, 3A và gọi chung là <b>u lympho thể nang kinh điển (cFL)</b>. ICC giữ nguyên phân độ. FL3B của ICC được WHO5 gọi là <b>u lympho tế bào B lớn dạng nang (FLBCL)</b> và <b>điều trị như DLBCL</b>.",
-        "<b>Thêm thực thể mới</b>: <b>dFL</b> (FL kiểu lan toả, BCL2-R âm, CD23 dương) và <b>PTFL ở người lớn</b>.",
-        "<b>DLBCL/HGBL có MYC và BCL2</b>: WHO5 gộp thành một thực thể; ICC vẫn tách <b>HGBL có MYC và BCL2 ± BCL6</b> và <b>HGBL có MYC và BCL6</b> riêng.",
-        "<b>LBCL có bất thường 11q</b> (WHO5) = <b>LBCL có bất thường 11q</b> (ICC) — trước gọi là “u lympho giống Burkitt có bất thường 11q”.",
-        "<b>NLPHL</b>: WHO5 giữ trong nhóm Hodgkin; ICC đổi tên thành <b>u lympho tế bào B ưu thế lympho thể nốt (NLPBL)</b>.",
-        "<b>Các u lympho T hỗ trợ nang được gộp thành một nhóm</b>: u lympho tế bào TFH tại hạch, thể nguyên bào miễn dịch mạch (trước là AITL), thể nang (trước là FTCL), và thể NOS (trước là nodal PTCL-TFH).",
-        "<b>Thực thể mới ở nhóm T/NK</b>: u lympho T diễn tiến chậm đường tiêu hoá; rối loạn tăng sinh lympho NK diễn tiến chậm đường tiêu hoá.",
-        "<b>ALCL</b>: đổi cách viết từ “ALCL, ALK positive” (WHO4R) sang <b>“ALK-positive ALCL”</b> (WHO5)."]}},
-  {label:"Đối chiếu tên gọi WHO4R – ICC – WHO5", tag:"Đối chiếu", tagc:"i",
-   html:'<div class="tbl"><table><thead><tr><th>WHO lần 4 sửa đổi</th><th>ICC 2022</th><th>WHO-HAEM5 (2022)</th></tr></thead><tbody>'+
-        '<tr><td>FL độ 1–2, 3A</td><td>FL độ 1–2, 3A</td><td><b>U lympho thể nang kinh điển (cFL)</b></td></tr>'+
-        '<tr><td>FL độ 3B</td><td>FL độ 3B</td><td><b>U lympho tế bào B lớn dạng nang (FLBCL)</b></td></tr>'+
-        '<tr><td>—</td><td>U lympho trung tâm nang BCL2-R âm, CD23 dương</td><td><b>FL kiểu lan toả (dFL)</b></td></tr>'+
-        '<tr><td>HGBL có MYC và BCL2 ± BCL6</td><td>HGBL có MYC và BCL2 ± BCL6</td><td><b>DLBCL/HGBL có MYC và BCL2</b></td></tr>'+
-        '<tr><td>HGBL có MYC và BCL6</td><td><b>HGBL có MYC và BCL6</b> (giữ riêng)</td><td>Xếp vào DLBCL-NOS hoặc HGBL-NOS</td></tr>'+
-        '<tr><td>U lympho giống Burkitt có bất thường 11q</td><td><b>LBCL có bất thường 11q</b></td><td><b>HGBL có bất thường 11q</b></td></tr>'+
-        '<tr><td>AITL</td><td>U lympho TFH, thể nguyên bào miễn dịch mạch</td><td><b>U lympho tế bào TFH tại hạch, thể nguyên bào miễn dịch mạch</b></td></tr>'+
-        '<tr><td>PTCL tại hạch kiểu hình TFH</td><td>U lympho TFH, NOS</td><td><b>U lympho tế bào TFH tại hạch, NOS</b></td></tr>'+
-        '<tr><td>U lympho T thể nang (FTCL)</td><td>U lympho TFH, thể nang</td><td><b>U lympho tế bào TFH tại hạch, thể nang</b></td></tr>'+
-        '<tr><td>NLPHL</td><td><b>U lympho tế bào B ưu thế lympho thể nốt (NLPBL)</b></td><td><b>NLPHL</b> (giữ trong nhóm Hodgkin)</td></tr>'+
-        '<tr><td>Chronic LPD of NK cells</td><td>Chronic LPD of NK cells</td><td><b>NK-LGLL</b></td></tr>'+
-        '</tbody></table></div>'}]},
-
-/* ---------- THANG TIÊN LƯỢNG ---------- */
 {label:"THANG TIÊN LƯỢNG — tổng hợp", tag:"Tiên lượng", tagc:"i",
  html:'<div class="tbl"><table><thead><tr><th>Thang</th><th>Dùng cho</th><th>Yếu tố</th><th>Phân nhóm</th></tr></thead><tbody>'+
       '<tr><td><b>IPI</b></td><td>DLBCL, PTCL</td><td>Tuổi &gt;60 · LDH &gt; bt · ECOG 2–4 · GĐ III–IV · Ngoài hạch &gt;1</td><td>0–1 / 2 / 3 / 4–5</td></tr>'+
@@ -2753,56 +3260,22 @@ children:[
       '<tr><td><b>PINK-E</b></td><td>ENKL</td><td>4 yếu tố PINK + <b>EBV DNA</b></td><td>Thấp 0–1 · TB 2 · Cao ≥3</td></tr>'+
       '<tr><td><b>ATL-PI</b></td><td>ATLL thể cấp và u lympho</td><td>Thể cấp · CRP ≥2,5 mg/dL · ECOG 2–4 · sIL-2R &gt;5000 U/mL · Ca ≥12 mg/dL</td><td>Thấp 0–1 · TB 2–3 · Cao 4–5</td></tr>'+
       '<tr><td><b>IPS</b></td><td>Hodgkin GĐ III–IV</td><td>Albumin &lt;4 g/dL · Hb &lt;10,5 g/dL · Nam · Tuổi ≥45 · GĐ IV · BC ≥15.000 · Lympho &lt;8% hoặc &lt;600</td><td>0–7 điểm</td></tr>'+
-      '</tbody></table></div>'},
-
-/* ---------- THAM CHIẾU GIAI ĐOẠN TIÊU HOÁ ---------- */
-{label:"XẾP GIAI ĐOẠN AJCC — DẠ DÀY VÀ THỰC QUẢN", tag:"AJCC", tagc:"i",
- note:"Theo AJCC lần 8. Bảng dưới là tham chiếu nhanh các mốc hay dùng trong cây quyết định.",
- rec:{lvl:"—", lvc:"i", title:"Các mốc T quan trọng",
-  li:["<b>Dạ dày</b>: Tis = loạn sản độ cao / ung thư trong biểu mô · T1a = niêm mạc · <b>T1b nông = xâm lấn hạ niêm mạc ≤500 µm</b> · <b>T1b sâu = &gt;500 µm</b> · T2 = lớp cơ · T3 = dưới thanh mạc · T4a = thủng thanh mạc · T4b = xâm lấn cấu trúc kế cận.",
-      "<b>Thực quản</b>: Tis = loạn sản độ cao · T1a = niêm mạc / cơ niêm · T1b = hạ niêm mạc · T2 = lớp cơ · T3 = lớp áo ngoài · T4a = màng phổi, màng ngoài tim, cơ hoành, phúc mạc (<b>còn cắt được</b>) · T4b = động mạch chủ, thân đốt sống, khí quản (<b>không cắt được</b>).",
-      "<b>Tế bào dịch rửa ổ bụng dương tính (CY+) ở ung thư dạ dày = M1</b> theo AJCC lần 8.",
-      "<b>Ngưỡng xâm lấn hạ niêm mạc để coi là tiên lượng xấu khác nhau theo mô học</b>: biểu mô vảy thực quản ≥200 µm; biểu mô tuyến thực quản &gt;500 µm.",
-      "<b>Tổn thương hạch thân tạng ở ung thư chỗ nối / thực quản đoạn xa vẫn có thể cân nhắc điều trị đa mô thức</b> — không tự động loại khỏi điều trị triệt căn."]}},
-
-/* ---------- NGUỒN ---------- */
-{label:"NGUỒN TÀI LIỆU VÀ GIỚI HẠN", tag:"Nguồn", tagc:"i",
- rec:{lvl:"—", lvc:"i", title:"Các bản hướng dẫn đã dùng để dựng cây này",
-  li:["<b>NCCN Gastric Cancer v4.2026</b> — 16/09/2026.",
-      "<b>NCCN Esophageal and Esophagogastric Junction Cancers v4.2026</b> — 16/09/2026.",
-      "<b>NCCN B-Cell Lymphomas v4.2026</b> — 20/05/2026.",
-      "<b>NCCN T-Cell Lymphomas v2.2026</b> — 13/02/2026.",
-      "<b>NCCN Hodgkin Lymphoma (Age ≥18 years) v2.2026</b> — 01/07/2026.",
-      "<b>ESMO Clinical Practice Guideline — Lymphomas</b> (Eyre TA và cộng sự).",
-      "<b>ESMO–eEHA Clinical Practice Guideline — Peripheral T- and NK-cell lymphomas</b> (d'Amore F và cộng sự).",
-      "<b>Phân loại WHO-HAEM5 (2022)</b> — Alaggio R và cộng sự, Leukemia 2022;36:1720-1748.",
-      "<b>Tiêu chuẩn Lugano 2014</b> — Cheson BD và cộng sự, J Clin Oncol 2014.",
-      "<b>Hướng dẫn Bộ Y tế</b>: QĐ 3127/QĐ-BYT (2020) cho ung thư tiêu hoá; <b>QĐ 1832/QĐ-BYT (2022)</b> — Hướng dẫn chẩn đoán và điều trị một số bệnh lý huyết học."],
-  cav:"<b>Nội dung được viết lại bằng tiếng Việt từ các hướng dẫn trên, KHÔNG sao chép sơ đồ hay hình minh hoạ gốc của NCCN</b> — bản quyền NCCN cấm sao chép hướng dẫn và hình minh hoạ dưới mọi hình thức khi chưa có văn bản cho phép."}},
-
-{label:"PHẦN CÒN THIẾU — cần bổ sung tài liệu", tag:"Thiếu", tagc:"a",
- rec:{lvl:"—", lvc:"a", title:"Các nhánh chưa dựng được vì thiếu hướng dẫn nguồn",
-  li:["<b>NCCN Chronic Lymphocytic Leukemia / Small Lymphocytic Lymphoma</b> — để dựng nhánh CLL/SLL và chuyển dạng Richter.",
-      "<b>NCCN Waldenström Macroglobulinemia / Lymphoplasmacytic Lymphoma</b> — để dựng nhánh WM/LPL.",
-      "<b>NCCN Primary Cutaneous Lymphomas</b> — để dựng nhánh sùi dạng nấm / hội chứng Sézary, ALCL da nguyên phát, sẩn dạng lympho, u lympho T dưới da giống viêm mô mỡ, và MZL da nguyên phát.",
-      "<b>NCCN Central Nervous System Cancers</b> — để dựng nhánh u lympho nguyên phát hệ thần kinh trung ương.",
-      "<b>NCCN Castleman Disease</b> — để dựng nhánh bệnh Castleman.",
-      "<b>NCCN Acute Lymphoblastic Leukemia</b> — để dựng chi tiết điều trị u lympho nguyên bào lympho (hiện chỉ có phần chẩn đoán).",
-      "<b>NCCN Pediatric Hodgkin Lymphoma</b> — nếu muốn phủ cả bệnh nhân dưới 18 tuổi.",
-      "<b>NCCN Management of CAR T-Cell and Lymphocyte Engager-Related Toxicities</b> — để dựng nhánh xử trí CRS và ICANS.",
-      "<b>Trang TCLYM-F (4 trang) của NCCN T-Cell Lymphomas v2.2026</b> — để dựng chi tiết phác đồ hội chứng thực bào máu thứ phát."],
-  cav:"Gửi thêm các bản PDF trên vào thư mục nguồn là có thể bổ sung các nhánh này vào cây."}}
+      '</tbody></table></div>'}
 ]};
+
+var LYMPHOMA = {
+label:"U LYMPHO", tag:"U lympho", tagc:"ly",
+note:"Ba dòng bệnh đi ba đường riêng. Nhánh <b>Tra cứu</b> chứa liều phác đồ, tiêu chuẩn đáp ứng Lugano 2014 và các thang tiên lượng dùng để chọn phác đồ.",
+children:[ LYM_B, LYM_T, LYM_H, LYM_REF ]};
 /* =======================================================================
-   OGC Treatment — bộ máy hiển thị
+   CÂY QUYẾT ĐỊNH ĐIỀU TRỊ UNG THƯ — bộ máy hiển thị
    ======================================================================= */
 (function(){
 "use strict";
 
 var TREE = {
-  label:"Chọn nhóm bệnh",
-  note:"Ba nhánh gốc: <b>ung thư đường tiêu hoá trên</b> (dạ dày, thực quản – chỗ nối dạ dày thực quản), <b>u lympho</b> (dòng B, dòng T/NK, Hodgkin) và <b>bảng tra cứu</b>. Dùng ô tìm kiếm ở trên để nhảy thẳng tới một bệnh, một phác đồ hay một loại thuốc.",
-  children:[ GI, LYM_B, LYM_T, LYM_H, REF ]
+  label:"Chọn loại ung thư",
+  children:[ BREAST, STOMACH, ESOPH, LYMPHOMA ]
 };
 
 var $ = function(s){ return document.querySelector(s); };
@@ -2930,7 +3403,15 @@ function buildLevel(parent, depth, container){
 }
 
 /* ---------- render ---------- */
+var ONCO = ['vu','dd','tq','lym'];
+function paintTheme(){
+  var k = (path.length && !openAll) ? ONCO[path[0]] : '';
+  if(k) document.documentElement.setAttribute('data-onco', k);
+  else document.documentElement.removeAttribute('data-onco');
+}
+
 function render(){
+  paintTheme();
   $('#btnAll').textContent = openAll ? 'Thu về dạng chọn nhánh' : 'Mở toàn bộ cây';
 
   var cb = $('#crumbs'); cb.innerHTML = '';
